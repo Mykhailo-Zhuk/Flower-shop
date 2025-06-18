@@ -1,0 +1,16 @@
+.counter {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 5px;
+}
+
+.ButtonCounter {
+  background-color: #cccccc;
+  border: none;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.Section1 {
+  background-color: #245e2c;
+  place-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+}
+
+.Section2 {
+  background-color: #569464;
+  place-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+}
+
+.Section3 {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+}
+
+.logoImage {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+}
+
+.headerOfCatolog {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 13px;
+}
+
+.headerOfCarulesTitle {
+  font-size: 50px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 13px;
+}
+
+.titleOfCatalog {
+  background-color: #245e2c;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-item {
+  height: 290px;
+  width: 350px;
+}
+
+.headerContainer {
+  background-color: #569464;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.ColumnOfCatalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.DisplayCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.MenuULSelect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 5px;
+  padding: 0;
+}
+
+.LiMenuSelect {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 5px;
+}
+
+@media screen and (max-width: 600px) and (min-width: 200px) {
+  .menu-text {
+    display: none;
+  }
+
+  .ColumnOfCatalog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0px;
+  }
+}
