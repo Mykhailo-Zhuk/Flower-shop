@@ -1,0 +1,16 @@
+.BreadCrumbContainer {
+  padding: 15px;
+}
+
+.LinksStyles {
+  font-size: 20px;
+  margin: 0;
+  color: #569464;
+}
+
+.LinksStyles:hover {
+  font-size: 25px;
+  color: #0d421a;
+  text-decoration: underline;
+  cursor: pointer;
+}

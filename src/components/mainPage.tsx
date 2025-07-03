@@ -1,12 +1,8 @@
 import "../styles/mainPage.css";
 import IndexCarusel from "./Carusel/IndexCarusel";
-import MenuDataMainPage, { CatalogDataMainPage } from "../Data/mainMenuData";
-
-type MenuItem = {
-  name: string;
-  link: string;
-  img: string;
-};
+import HeaderMenu from "./HeaderMenu/HeaderMenu";
+import Footer from "./Footer/Footer";
+import { CatalogDataMainPage, advantagesMainPage } from "../Data/mainMenuData";
 
 type CatalogItem = {
   titleOfCatalog: string;
@@ -14,34 +10,10 @@ type CatalogItem = {
 };
 
 const MainPage: React.FC = () => {
-  const menuItems: MenuItem[] = MenuDataMainPage;
   const catalogItems: CatalogItem[] = CatalogDataMainPage;
   return (
     <div>
-      <section className="Section1">
-        <div className="logo">
-          <img
-            src="/public/ГоловнаСторінка/2.png"
-            alt="logo Alyona's Garden"
-            className="logoImage"
-          />
-        </div>
-      </section>
-      <section className="Section2">
-        <ul className="MenuULSelect">
-          {menuItems.map((item, index) => (
-            <li key={index}>
-              <a className="LiMenuSelect" href={item.link}>
-                <img
-                  src={item.img.replace("../../public", "")}
-                  alt={item.name}
-                />
-                <span className="menu-text">{item.name}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <HeaderMenu />
       <section className="Section3">
         <video
           height={"60%"}
@@ -83,14 +55,84 @@ const MainPage: React.FC = () => {
         <div className="titleOfCatalog">
           <h2 className="headerOfCarulesTitle">ТОП продажів</h2>
         </div>
-        <IndexCarusel />
+        <IndexCarusel slides={CatalogDataMainPage} type="catalog" />
       </section>
-      <section className="Section5">
+      <section className="Section6">
         <div className="titleOfCatalog">
           <h2 className="headerOfCarulesTitle">Популярні товари</h2>
         </div>
-        <IndexCarusel />
+        <IndexCarusel slides={CatalogDataMainPage} type="catalog" />
       </section>
+      <section className="Section7">
+        <div className="titleOfCatalog">
+          <h2 className="headerOfCarulesTitle">Акційні товари</h2>
+        </div>
+        <IndexCarusel slides={CatalogDataMainPage} type="catalog" />
+      </section>
+      <div className="titleOfCatalogWithoutBackground">
+        <h2 className="headerOfTitle">Новинки</h2>
+      </div>
+      <section className="Section8">
+        <div className="DisplayCenter">
+          <div className="ColumnOfPerevagy">
+            {advantagesMainPage.map((item, idx) => (
+              <div key={idx} className="advantages-item">
+                <img
+                  src={item.img.replace("../../public", "")}
+                  alt={item.titleOfAdvantages}
+                  height={"80px"}
+                  className="advantages-image"
+                />
+
+                <h3 className="advantages-title">
+                  {item.NumbersWithBackground &&
+                    item.NumbersWithBackground.trim() !== "" && (
+                      <em className="BackgroundNumber">
+                        {item.NumbersWithBackground}
+                      </em>
+                    )}
+
+                  {item.titleOfAdvantages}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="Section9">
+        <div className="titleOfSiteOpis">
+          <h1>САДЖАНЦІ ДЕРЕВ ТА РОСЛИН ВІД МАГАЗИНУ 'ALYONA'S GARDEN'</h1>
+        </div>
+        <div className="columnTextImage">
+          <div className="mainSubjectOfCompani">
+            <p>
+              Шановні друзі! <br /> Ласкаво просимо до нашого інтернет-магазину
+              саджанців. Вже більше 10-ти років ми вирощуємо різні рослини,
+              величезну кількість плодових дерев як для садівників-початківців,
+              так і для любителів живої краси на своїй ділянці, пропонуємо
+              оптові пропозиції для фермерських господарств, співпрацюємо з
+              садовими центрами та ландшафтними дизайнерами. Широкий асортимент
+              товару допоможе нашим покупцям підібрати усе необхідне для
+              садівництва чи городництва. Ми піклуємося про те, щоб Ви вчасно
+              отримали свою покупку у належному стані. На нашому сайті Ви можете
+              залишити свої відгуки. Наші менеджери допоможуть Вам зробити
+              правильний вибір, ознайомлять з кожним видом саджанців, нададуть
+              професійну допомогу. Ми відправляємо саджанці поштою по всій
+              підконтрольній території України.
+            </p>
+          </div>
+          <div className="imageOfMainSubject">
+            <img
+              src="/public/ГоловнаСторінка/43.png"
+              alt="mainSubjectImage"
+              height={"100%"}
+              width={"100%"}
+              className="imageOfMainSubjectImage"
+            />
+          </div>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 };

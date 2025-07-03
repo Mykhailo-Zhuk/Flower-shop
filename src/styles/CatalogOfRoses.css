@@ -1,0 +1,96 @@
+.AboutCompaniOfPrefaceBlackBold {
+  color: black;
+  font-weight: 300;
+  margin: 0 30px;
+  text-align: center;
+}
+
+.containerOfCareInstruction {
+  margin: 30px;
+}
+
+.CatalogPopularTitle {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  color: #245e2c;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.ContainerOfCatalogPopularRoses {
+  padding: 20px;
+  background-color: #b8ccae;
+}
+
+img.CatalogPopularImages {
+  width: 100%;
+  height: 250px;
+}
+
+.LinkToBuy {
+  color: #245e2c;
+  font-style: italic;
+  text-align: center;
+  
+}
+
+.ColumnOfCatalogPopularRoses {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.TitleOfSection1 {
+  text-align: center;
+  font-weight: bold;
+  color: #245e2c;
+  margin: 15px;
+  text-transform: uppercase;
+}
+
+.TitleOfPrefaceBlackBold {
+  color: black;
+  font-weight: 500;
+  text-align: center;
+}
+
+.TitleToLeft {
+  background-color: #245e2c;
+  color: #fff;
+  width: fit-content;
+  padding: 7px;
+  margin: 5px;
+}
+
+.textLiOfCare {
+  margin: 5px;
+  font-weight: 350;
+  width: 80%;
+}
+
+@media screen and (max-width: 950px) and (min-width: 200px) {
+  .CatalogPopularTitle {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    background-color: white;
+    color: #245e2c;
+    padding: 5px;
+    text-transform: uppercase;
+  }
+
+  img.CatalogPopularImages {
+    width: 100%;
+    height: auto;
+  }
+
+  .ColumnOfCatalogPopularRoses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

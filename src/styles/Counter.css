@@ -1,16 +1,14 @@
 .counter {
   display: flex;
-  justify-content: center;
-  place-items: center;
+
+  margin: 0 auto;
+
+  width: fit-content;
   gap: 5px;
 }
 
-.ButtonCounter {
-  background-color: #cccccc;
+button.ButtonCounter {
+  background: rgb(203, 203, 203);
+  height: fit-content;
   border: none;
-  font-size: 20px;
-
-  display: flex;
-  justify-content: center;
-  padding: 5px;
 }

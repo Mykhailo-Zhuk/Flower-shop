@@ -1,18 +1,29 @@
 import React from "react";
-import EmblaCarousel from "../Carusel/EmblaCarusel";
+import EmblaCarousel from "./EmblaCarousel";
+import type { EmblaOptionsType } from "embla-carousel";
 import "../../styles/base.css";
-
 import "../../styles/embla.css";
 
-// Замість EmblaOptionsType використовуйте any або власний тип:
-const OPTIONS: any = { slidesToScroll: "auto" };
-const SLIDE_COUNT = 10;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+const OPTIONS: EmblaOptionsType = { slidesToScroll: "auto" };
 
-const IndexCarusel: React.FC = () => (
-  <>
-    <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-  </>
+type CatalogDataMainPageType = {
+  titleOfCatalog: string;
+  backgroundImages: string;
+};
+
+type CatalogHybridRoseSeedlingsType = {
+  TitleOfHybridRose: string;
+  imgHybridRose: string;
+  priceHybridRose: string;
+};
+
+type Props = {
+  slides: CatalogDataMainPageType[] | CatalogHybridRoseSeedlingsType[];
+  type: "catalog" | "rose";
+};
+
+const IndexCarusel: React.FC<Props> = ({ slides, type }) => (
+  <EmblaCarousel slides={slides} type={type} options={OPTIONS} />
 );
 
 export default IndexCarusel;

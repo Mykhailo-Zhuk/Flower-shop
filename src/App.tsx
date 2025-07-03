@@ -1,4 +1,5 @@
 import "./App.css";
+import "antd/dist/reset.css";
 import MainPage from "./components/mainPage";
 function App() {
   return (

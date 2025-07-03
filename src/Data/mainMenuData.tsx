@@ -22,6 +22,36 @@ const MenuDataMainPage = [
   },
 ];
 
+const sortOptions = [
+  { value: "popular-desc", label: "За популярністю (по спадаючій)" },
+  { value: "popular-asc", label: "За популярністю (по зростанню)" },
+  { value: "price-asc", label: "Від дешевих до дорогих" },
+  { value: "price-desc", label: "Від дорогих до дешевих" },
+];
+
+const CatalogOfPopularRosesTypes = [
+  {
+    TitleTypeOfRose: "Чайно-Гібридні",
+    imgTypeOfRose: "/public/ЕлементиСаджанціТроянд1/15.png",
+    route: "/catalog-tea-hybride-rose",
+  },
+  {
+    TitleTypeOfRose: "БОРДЮРНI",
+    imgTypeOfRose: "/public/ЕлементиСаджанціТроянд1/16.png",
+    route: "/catalog-borders-rose",
+  },
+  {
+    TitleTypeOfRose: "ПЛЕТИСТІ",
+    imgTypeOfRose: "/public/ЕлементиСаджанціТроянд1/17.png",
+    route: "/catalog-england-rose",
+  },
+  {
+    TitleTypeOfRose: "АНГЛІЙСЬКІ",
+    imgTypeOfRose: "/public/ЕлементиСаджанціТроянд1/18.png",
+    route: "/catalog-england-rose",
+  },
+];
+
 const CatalogDataMainPage = [
   {
     titleOfCatalog: "Саджанці троянд",
@@ -85,7 +115,1075 @@ const CatalogDataMainPage = [
   },
 ];
 
+const CaruselHybridRoseSeedlings = [
+  {
+    TitleOfHybridRose: "Чайно-гібридна троянда 'Хай Меджик'",
+    imgHybridRose: "/public/ЕлементиСаджанціТроянд1/23.png",
+    priceHybridRose: "85грн",
+    ratingOfCatalogRoses: "5",
+  },
+  {
+    TitleOfHybridRose: "Чайно-гібридна троянда 'Боїнг'",
+    imgHybridRose: "/public/ЕлементиСаджанціТроянд1/24.png",
+    priceHybridRose: "85грн",
+    ratingOfCatalogRoses: "5",
+  },
+  {
+    TitleOfHybridRose: "Чайно-гібридна троянда 'Хай Меджик'",
+    imgHybridRose: "/public/ЕлементиСаджанціТроянд1/23.png",
+    priceHybridRose: "85грн",
+    ratingOfCatalogRoses: "5",
+  },
+  {
+    TitleOfHybridRose: "Чайно-гібридна троянда 'Боїнг'",
+    imgHybridRose: "/public/ЕлементиСаджанціТроянд1/24.png",
+    priceHybridRose: "85грн",
+    ratingOfCatalogRoses: "5",
+  },
+];
+
+const advantagesMainPage = [
+  {
+    NumbersWithBackground: "100%                       ",
+    titleOfAdvantages: "Гарантія",
+    img: "/public/ГоловнаСторінка/30.png",
+  },
+  {
+    NumbersWithBackground: "100%  ",
+    titleOfAdvantages: "Відповідність товару",
+    img: "/public/ГоловнаСторінка/32.png",
+  },
+  {
+    NumbersWithBackground: "",
+    titleOfAdvantages: "швидка доставка",
+    img: "/public/ГоловнаСторінка/33.png",
+  },
+  {
+    NumbersWithBackground: "300грн",
+    titleOfAdvantages: "мінімальне замовлення",
+    img: "/public/ГоловнаСторінка/34.png",
+  },
+];
+
+const TextForCatalogPage = [
+  {
+    TitleOfPrefaceOfCatalogBlack: "Купити саджанці троянд в «Alyona’s Garden»",
+  },
+  {
+    prefaceOfCatalogOfRoses:
+      " Якщо ви шукаєте якісні саджанці троянд, «Alyona’s Garden» — ідеальне місце для вашого вибору! Тут представлений широкий асортимент сортів: чайно-гібридні, плетисті, бордюрні та англійські троянди.     Якщо ви шукаєте якісні саджанці троянд, «Alyona's Garden» — ідеальне місце для вашого вибору! Тут представлений широкий асортимент сортів: чайно-гібридні, плетисті, бордюрні та англійські троянди.",
+  },
+  {
+    GreenTitleOfCatalogOfRoses: "Якість та надійність",
+    TextOfCatalogOfRoses:
+      "У «Alyona’s Garden» ви отримуєте здорові та міцні саджанці, вирощені у професійних умовах. Кожна рослина проходить ретельний контроль перед відправкою, що гарантує її швидке укорінення у вашому саду.",
+  },
+  {
+    GreenTitleOfCatalogOfRoses: "Зручна доставка по Україні",
+    TextOfCatalogOfRoses:
+      "Замовлення оформлюється легко, а доставка здійснюється в найкоротші терміни. Ви отримуєте свіжі саджанці, готові до посадки, без стресу та зайвих турбот.",
+  },
+  {
+    GreenTitleOfCatalogOfRoses: "Консультації та допомога у виборі",
+    TextOfCatalogOfRoses:
+      "Якщо вам потрібна порада щодо вибору сорту або догляду за трояндами, команда «Alyona’s Garden» завжди готова допомогти!",
+  },
+  {
+    UpdateCatalogpreface:
+      "Оновіть свій сад разом із «Alyona’s Garden» – вибирайте троянди, які радуватимуть вас роками!",
+  },
+  {
+    linkGreenOfCatalogRoses: " Зробіть замовлення вже сьогодні!",
+  },
+];
+
+const CareAndSecretsOfGrowingRoses = [
+  {
+    TitleOfSecretsOfGrowingRoses: "Догляд та секрети вирощування троянд",
+    prefaceCareAndSecretsOfGrowingRoses:
+      "Вирощування троянд — це мистецтво, яке потребує уваги до деталей. Ось кілька ключових аспектів догляду за трояндами:",
+  },
+  {
+    TypesOfCares: "Посадка",
+    ImagesTypeOfCare: "/public/ЕлементиСаджанціТроянд1/32.png",
+    ulOfCareOfRoses: {
+      1: "Вибирайте сонячне місце з добре дренованим ґрунтом.",
+      2: "Оптимальний час посадки — весна або осінь",
+      3: "Перед посадкою коріння варто замочити у воді на 2-3 години.",
+    },
+  },
+  {
+    TypesOfCares: "Полив",
+    ImagesTypeOfCare: "/public/ЕлементиСаджанціТроянд1/33.png",
+    ulOfCareOfRoses: {
+      1: "Поливайте 1-2 рази на тиждень, залежно від погоди.",
+      2: "Використовуйте теплу воду, уникаючи потрапляння на листя.",
+      3: "Мульчування допоможе зберегти вологу та захистити коріння.",
+    },
+  },
+  {
+    TypesOfCares: "Підживлення",
+    ImagesTypeOfCare: "/public/ЕлементиСаджанціТроянд1/34.png",
+    ulOfCareOfRoses: {
+      1: "Навесні троянди потребують азотних добрив для активного росту.",
+      2: "Влітку використовуйте калійно-фосфорні добрива для рясного цвітіння.",
+      3: "Восени підживлення допоможе підготувати рослину до зими.",
+    },
+  },
+  {
+    TypesOfCares: "Обрізка",
+    ImagesTypeOfCare: "/public/ЕлементиСаджанціТроянд1/35.png",
+    ulOfCareOfRoses: {
+      1: "Весняна обрізка стимулює нові пагони та формує кущ.",
+      2: "Влітку видаляйте зів’ялі квіти, щоб продовжити цвітіння.",
+      3: "Восени обрізайте слабкі пагони та готуйте троянду до зимівлі.",
+    },
+  },
+  {
+    TypesOfCares: "Зимовий захист",
+    ImagesTypeOfCare: "/public/ЕлементиСаджанціТроянд1/36.png",
+    ulOfCareOfRoses: {
+      1: "Укривайте троянди хвойним лапником або агроволокном.",
+      2: "Високі кущі можна пригнути до землі та накрити мульчею.",
+    },
+  },
+  {
+    TypesOfCares: "Боротьба з хворобами",
+    ImagesTypeOfCare: "/public/ЕлементиСаджанціТроянд1/37.png",
+    ulOfCareOfRoses: {
+      1: "Для профілактики обприскуйте троянди розчином мідного купоросу.",
+      2: "Регулярно перевіряйте листя на ознаки грибкових захворювань.",
+    },
+  },
+];
+
+/*Catalog Of England Rose */
+const FirstEnglandRoseCarusel = [
+  {
+    titleOfEnglandRose: "Англійська троянда «Принцеса Маргарита»",
+    imagesRoses: {
+      img1: "/public/ЕлементиАнглійськіТроянди/20.png",
+      img2: "/public/ЕлементиАнглійськіТроянди/20.png",
+      img3: "/public/ЕлементиАнглійськіТроянди/20.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfEnglandRose: "150.00 грн",
+    rating: 4.5,
+  },
+  {
+    titleOfEnglandRose: "Англійська троянда «Принцеса Маргарита»",
+    imagesRoses: {
+      img1: "/public/ЕлементиАнглійськіТроянди/20.png",
+      img2: "/public/ЕлементиАнглійськіТроянди/20.png",
+      img3: "/public/ЕлементиАнглійськіТроянди/20.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfEnglandRose: "150.00 грн",
+    rating: 4.5,
+  },
+  {
+    titleOfEnglandRose: "Англійська троянда «Принцеса Маргарита»",
+    imagesRoses: {
+      img1: "/public/ЕлементиАнглійськіТроянди/20.png",
+      img2: "/public/ЕлементиАнглійськіТроянди/20.png",
+      img3: "/public/ЕлементиАнглійськіТроянди/20.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfEnglandRose: "150.00 грн",
+    rating: 4.5,
+  },
+];
+
+const SecondEnglandRoseCarusel = [
+  {
+    titleOfEnglandRose: "Англійська троянда «Принцеса Олександра Кентська»",
+    imagesRoses: {
+      img1: "/public/ЕлементиАнглійськіТроянди/25.png",
+      img2: "/public/ЕлементиАнглійськіТроянди/25.png",
+      img3: "/public/ЕлементиАнглійськіТроянди/25.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfEnglandRose: "150.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfEnglandRose: "Англійська троянда «Принцеса Олександра Кентська»",
+    imagesRoses: {
+      img1: "/public/ЕлементиАнглійськіТроянди/25.png",
+      img2: "/public/ЕлементиАнглійськіТроянди/25.png",
+      img3: "/public/ЕлементиАнглійськіТроянди/25.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfEnglandRose: "150.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfEnglandRose: "Англійська троянда «Принцеса Олександра Кентська»",
+    imagesRoses: {
+      img1: "/public/ЕлементиАнглійськіТроянди/25.png",
+      img2: "/public/ЕлементиАнглійськіТроянди/25.png",
+      img3: "/public/ЕлементиАнглійськіТроянди/25.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfEnglandRose: "150.00 грн",
+    rating: 4,
+  },
+];
+
+const ThirdyEnglandRoseCarusel = [
+  {
+    titleOfEnglandRose: "Англійська троянда «Фальстаф»",
+    imagesRoses: {
+      img1: "/public/ЕлементиАнглійськіТроянди/26.png",
+      img2: "/public/ЕлементиАнглійськіТроянди/27.png",
+      img3: "/public/ЕлементиАнглійськіТроянди/28.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfEnglandRose: "150.00 грн",
+    rating: 3,
+  },
+  {
+    titleOfEnglandRose: "Англійська троянда «Фальстаф»",
+    imagesRoses: {
+      img1: "/public/ЕлементиАнглійськіТроянди/26.png",
+      img2: "/public/ЕлементиАнглійськіТроянди/27.png",
+      img3: "/public/ЕлементиАнглійськіТроянди/28.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfEnglandRose: "150.00 грн",
+    rating: 3,
+  },
+  {
+    titleOfEnglandRose: "Англійська троянда «Фальстаф»",
+    imagesRoses: {
+      img1: "/public/ЕлементиАнглійськіТроянди/26.png",
+      img2: "/public/ЕлементиАнглійськіТроянди/27.png",
+      img3: "/public/ЕлементиАнглійськіТроянди/28.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfEnglandRose: "150.00 грн",
+    rating: 3,
+  },
+];
+
+/*Catalog Of England Rose */
+/*Catalog Of Borders Rose */
+const FirstTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Ред Інтуішн»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/24.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/24.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Ред Інтуішн»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/24.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/24.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Ред Інтуішн»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/24.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/24.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const SecondTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Хай Меджик»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/25.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/25.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/25.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Хай Меджик»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/25.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/25.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/25.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Хай Меджик»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/25.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/25.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/25.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const ThirdyTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Боїнг»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/26.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/26.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/26.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Боїнг»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/26.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/26.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/26.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const FourthTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Зелена Планета»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/27.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/27.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/27.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Зелена Планета»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/27.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/27.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/27.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const FifthTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Фолос»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/28.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/28.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/28.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Фолос»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/28.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/28.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/28.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const SixthTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Белла Віта»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/29.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/29.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/29.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Белла Віта»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/29.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/29.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/29.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const SeventhTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Принц Жардіньє»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/30.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/30.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/30.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Принц Жардіньє»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/30.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/30.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/30.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const EihgthTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Гіннес»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/31.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/31.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/31.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Гіннес»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/31.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/31.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/31.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const NinethTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Блек Баккара»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/32.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/32.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/32.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Блек Баккара»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/32.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/32.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/32.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const TenthTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Аква»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/33.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/33.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/33.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Аква»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/33.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/33.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/33.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const EleventhTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Блакитний Ніл»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/34.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/34.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/34.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Блакитний Ніл»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/34.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/34.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/34.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const TwelveTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Кьорн»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/35.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/35.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/35.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Кьорн»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/35.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/35.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/35.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const ThirteenTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Версілія»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/36.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/36.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/36.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Версілія»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/36.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/36.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/36.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+
+const FourteenTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Ранок Парижу»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/37.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/37.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/37.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Ранок Парижу»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/37.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/37.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/37.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+  },
+];
+/*Catalog Of England Rose */
+/*Catalog Of Tea-Hybride Rose */
+const FirstBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Лавлі Грін» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/22.png",
+      img2: "/public/ЕлементиБордюрніТроянди/22.png",
+      img3: "/public/ЕлементиБордюрніТроянди/22.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Лавлі Грін»  ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/22.png",
+      img2: "/public/ЕлементиБордюрніТроянди/22.png",
+      img3: "/public/ЕлементиБордюрніТроянди/22.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const SecondBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Рубі Стар» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/23.png",
+      img2: "/public/ЕлементиБордюрніТроянди/23.png",
+      img3: "/public/ЕлементиБордюрніТроянди/23.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Рубі Стар» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/23.png",
+      img2: "/public/ЕлементиБордюрніТроянди/23.png",
+      img3: "/public/ЕлементиБордюрніТроянди/23.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const ThirdyBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Рубікон» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/24.png",
+      img2: "/public/ЕлементиБордюрніТроянди/24.png",
+      img3: "/public/ЕлементиБордюрніТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Рубікон» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/24.png",
+      img2: "/public/ЕлементиБордюрніТроянди/24.png",
+      img3: "/public/ЕлементиБордюрніТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const FourthBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Яна» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/25.png",
+      img2: "/public/ЕлементиБордюрніТроянди/25.png",
+      img3: "/public/ЕлементиБордюрніТроянди/25.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Яна» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/25.png",
+      img2: "/public/ЕлементиБордюрніТроянди/25.png",
+      img3: "/public/ЕлементиБордюрніТроянди/25.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const FifthBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Сафіна»",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/26.png",
+      img2: "/public/ЕлементиБордюрніТроянди/26.png",
+      img3: "/public/ЕлементиБордюрніТроянди/26.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Сафіна»",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/26.png",
+      img2: "/public/ЕлементиБордюрніТроянди/26.png",
+      img3: "/public/ЕлементиБордюрніТроянди/26.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const SixthBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Помпонелла» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/27.png",
+      img2: "/public/ЕлементиБордюрніТроянди/27.png",
+      img3: "/public/ЕлементиБордюрніТроянди/27.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Помпонелла» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/27.png",
+      img2: "/public/ЕлементиБордюрніТроянди/27.png",
+      img3: "/public/ЕлементиБордюрніТроянди/27.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const SeventhBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Клемантина» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/28.png",
+      img2: "/public/ЕлементиБордюрніТроянди/28.png",
+      img3: "/public/ЕлементиБордюрніТроянди/28.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Клемантина»  ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/28.png",
+      img2: "/public/ЕлементиБордюрніТроянди/28.png",
+      img3: "/public/ЕлементиБордюрніТроянди/28.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const EihgthBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Браун Шугар» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/29.png",
+      img2: "/public/ЕлементиБордюрніТроянди/29.png",
+      img3: "/public/ЕлементиБордюрніТроянди/29.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Браун Шугар»",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/29.png",
+      img2: "/public/ЕлементиБордюрніТроянди/29.png",
+      img3: "/public/ЕлементиБордюрніТроянди/29.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const NinethBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Червона Крапелька» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/30.png",
+      img2: "/public/ЕлементиБордюрніТроянди/30.png",
+      img3: "/public/ЕлементиБордюрніТроянди/30.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Червона Крапелька» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/30.png",
+      img2: "/public/ЕлементиБордюрніТроянди/30.png",
+      img3: "/public/ЕлементиБордюрніТроянди/30.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const TenthBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Зе Фейрі» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/31.png",
+      img2: "/public/ЕлементиБордюрніТроянди/31.png",
+      img3: "/public/ЕлементиБордюрніТроянди/31.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Зе Фейрі» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/31.png",
+      img2: "/public/ЕлементиБордюрніТроянди/31.png",
+      img3: "/public/ЕлементиБордюрніТроянди/31.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const EleventhBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Астерія Піксі»",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/32.png",
+      img2: "/public/ЕлементиБордюрніТроянди/32.png",
+      img3: "/public/ЕлементиБордюрніТроянди/32.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Меліна» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/33.png",
+      img2: "/public/ЕлементиБордюрніТроянди/33.png",
+      img3: "/public/ЕлементиБордюрніТроянди/33.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const TwelveBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Меліна» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/33.png",
+      img2: "/public/ЕлементиБордюрніТроянди/33.png",
+      img3: "/public/ЕлементиБордюрніТроянди/33.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Меліна» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/33.png",
+      img2: "/public/ЕлементиБордюрніТроянди/33.png",
+      img3: "/public/ЕлементиБордюрніТроянди/33.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const ThirteenBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Мейді» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/34.png",
+      img2: "/public/ЕлементиБордюрніТроянди/34.png",
+      img3: "/public/ЕлементиБордюрніТроянди/34.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Мейді» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/34.png",
+      img2: "/public/ЕлементиБордюрніТроянди/34.png",
+      img3: "/public/ЕлементиБордюрніТроянди/34.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const FourteenBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Роксі» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/35.png",
+      img2: "/public/ЕлементиБордюрніТроянди/35.png",
+      img3: "/public/ЕлементиБордюрніТроянди/35.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Роксі» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/35.png",
+      img2: "/public/ЕлементиБордюрніТроянди/35.png",
+      img3: "/public/ЕлементиБордюрніТроянди/35.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const FifthteenBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Скарлет Хіт» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/36.png",
+      img2: "/public/ЕлементиБордюрніТроянди/36.png",
+      img3: "/public/ЕлементиБордюрніТроянди/36.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Скарлет Хіт» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/36.png",
+      img2: "/public/ЕлементиБордюрніТроянди/36.png",
+      img3: "/public/ЕлементиБордюрніТроянди/36.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+
+const SixteenBordersRoseCarusel = [
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Орандж»",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/37.png",
+      img2: "/public/ЕлементиБордюрніТроянди/37.png",
+      img3: "/public/ЕлементиБордюрніТроянди/37.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfBordersRoseCarusel: "Бордюрна троянда «Орандж» ",
+    imagesRoses: {
+      img1: "/public/ЕлементиБордюрніТроянди/37.png",
+      img2: "/public/ЕлементиБордюрніТроянди/37.png",
+      img3: "/public/ЕлементиБордюрніТроянди/37.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfBordersRoseCarusel: "80.00 грн",
+    rating: 4,
+  },
+];
+/*Catalog Of Borders Rose */
+
 export default MenuDataMainPage;
 export type MenuDataMainPageType = typeof MenuDataMainPage;
 
-export { CatalogDataMainPage };
+export {
+  CatalogDataMainPage,
+  CatalogOfPopularRosesTypes,
+  advantagesMainPage,
+  CaruselHybridRoseSeedlings,
+  TextForCatalogPage,
+  CareAndSecretsOfGrowingRoses,
+  FirstEnglandRoseCarusel,
+  SecondEnglandRoseCarusel,
+  ThirdyEnglandRoseCarusel,
+  sortOptions,
+  FirstTeaHybrideRoseCarusel,
+  SecondTeaHybrideRoseCarusel,
+  ThirdyTeaHybrideRoseCarusel,
+  FourthTeaHybrideRoseCarusel,
+  FifthTeaHybrideRoseCarusel,
+  SixthTeaHybrideRoseCarusel,
+  SeventhTeaHybrideRoseCarusel,
+  EihgthTeaHybrideRoseCarusel,
+  NinethTeaHybrideRoseCarusel,
+  TenthTeaHybrideRoseCarusel,
+  EleventhTeaHybrideRoseCarusel,
+  TwelveTeaHybrideRoseCarusel,
+  ThirteenTeaHybrideRoseCarusel,
+  FourteenTeaHybrideRoseCarusel,
+  FirstBordersRoseCarusel,
+  SecondBordersRoseCarusel,
+  ThirdyBordersRoseCarusel,
+  FourthBordersRoseCarusel,
+  FifthBordersRoseCarusel,
+  SixthBordersRoseCarusel,
+  SeventhBordersRoseCarusel,
+  EihgthBordersRoseCarusel,
+  NinethBordersRoseCarusel,
+  TenthBordersRoseCarusel,
+  EleventhBordersRoseCarusel,
+  TwelveBordersRoseCarusel,
+  ThirteenBordersRoseCarusel,
+  FourteenBordersRoseCarusel,
+  FifthteenBordersRoseCarusel,
+  SixteenBordersRoseCarusel,
+};

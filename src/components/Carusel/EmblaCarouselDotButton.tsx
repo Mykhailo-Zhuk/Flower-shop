@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useState } from "react";
 import type { ComponentPropsWithRef } from "react";
 import type { EmblaCarouselType } from "embla-carousel";
+import "../../styles/base.css";
+import "../../styles/embla.css";
 
 type UseDotButtonType = {
   selectedIndex: number;
