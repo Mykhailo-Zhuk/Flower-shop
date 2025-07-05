@@ -33,7 +33,20 @@ img.CatalogPopularImages {
   color: #245e2c;
   font-style: italic;
   text-align: center;
-  
+}
+
+.HowToCareIconAndTextContainer {
+  display: flex;
+  justify-content: left;
+  place-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.HowToCareIconAndText {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 15px 0px;
 }
 
 .ColumnOfCatalogPopularRoses {
@@ -70,6 +83,36 @@ img.CatalogPopularImages {
   margin: 5px;
   font-weight: 350;
   width: 80%;
+  list-style-type: none;
+}
+
+.ULLiOfCare {
+  list-style: none;
+  padding-left: 1.2em;
+  margin: 5px;
+  font-weight: 350;
+  font-size: 29px;
+  width: 80%;
+}
+
+.ULLiOfCare li {
+  position: relative;
+  color: black;
+  margin-bottom: 0.5em;
+  padding-left: 1.2em;
+}
+
+.ULLiOfCare li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0.7em;
+  height: 0.7em;
+  background: #245e2c; /* зелений */
+  border-radius: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
 }
 
 @media screen and (max-width: 950px) and (min-width: 200px) {

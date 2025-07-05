@@ -2,59 +2,59 @@ import { Link as RouterLink, useLocation } from "react-router-dom";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
-import "../../styles/BreadCrumb.css";
+import HomeIcon from "@mui/icons-material/Home";
 
 const PATH_NAMES: Record<string, string> = {
-  "": "/public/ЕлементиЧайно-гібридніТроянди/10.png",
-  "catalog-of-roses": "Каталог троянд",
-  "catalog-england-rose": "Англійські троянди",
-  "catalog-tea-hybride-rose": "Чайно-гібридні троянди",
-  "catalog-borders-rose": "Бордюрні троянди",
+  "/catalog-of-roses": "Каталог троянд",
+  "/catalog-of-roses/catalog-england-rose": "Англійські троянди",
+  "/catalog-of-roses/catalog-tea-hybride-rose": "Чайно-гібридні троянди",
+  "/catalog-of-roses/catalog-borders-rose": "Бордюрні троянди",
+  "/catalog-of-roses/catalog-climbing-rose": "Плетисті троянди",
+  "/catalog-of-roses/catalog-tea-hybride-sun-rose": "Троянди Сонячна",
 };
-
-function renderBreadcrumbContent(value: string) {
-  const label = PATH_NAMES[value] || value;
-  if (
-    typeof label === "string" &&
-    (label.endsWith(".png") || label.endsWith(".jpg") || label.endsWith(".svg"))
-  ) {
-    return (
-      <img
-        src={label}
-        alt={value}
-        style={{ width: 24, height: 24, verticalAlign: "middle" }}
-      />
-    );
-  }
-  return label;
-}
 
 export default function BreadCrumb() {
   const location = useLocation();
-  const pathnames = location.pathname.split("/").filter((x) => x);
+  const pathnames = location.pathname.split("/").filter(Boolean);
 
-  const current = pathnames[pathnames.length - 1] || "";
+  const breadcrumbs = [
+    <Link
+      key="home"
+      component={RouterLink}
+      to="/"
+      underline="hover"
+      color="inherit"
+      style={{ display: "flex", alignItems: "center" }}
+    >
+      <HomeIcon style={{ color: "#569464", fontSize: 25, verticalAlign: "middle" }} />
+    </Link>,
+    ...pathnames.map((value, idx) => {
+      const to = "/" + pathnames.slice(0, idx + 1).join("/");
+      const label = PATH_NAMES[to] || decodeURIComponent(value);
+      const isLast = idx === pathnames.length - 1;
+      return isLast ? (
+        <Typography key={to} color="text.primary">{label}</Typography>
+      ) : (
+        <Link
+          key={to}
+          component={RouterLink}
+          to={to}
+          underline="hover"
+          color="inherit"
+        >
+          {label}
+        </Link>
+      );
+    }),
+  ];
 
   return (
     <Breadcrumbs
-      separator={<span style={{ fontSize: 28, color: "#000" }}>/</span>}
+      separator={<span style={{ fontSize: 24, margin: "0 4px" }}>/</span>}
       aria-label="breadcrumb"
       className="BreadCrumbContainer"
     >
-      <Link
-        component={RouterLink}
-        className="LinksStyles"
-        underline="hover"
-        color="inherit"
-        to="/"
-      >
-        {renderBreadcrumbContent("")}
-      </Link>
-      {current && (
-        <Typography>
-          <h1 className="LinksStyles"> {renderBreadcrumbContent(current)}</h1>
-        </Typography>
-      )}
+      {breadcrumbs}
     </Breadcrumbs>
   );
 }

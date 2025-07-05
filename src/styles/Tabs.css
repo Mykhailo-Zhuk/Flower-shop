@@ -1,0 +1,82 @@
+.HeaderOfOpisRoseSun {
+  color: black;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+/* .TabsTitleStyle {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+} */
+
+.ant-tabs-tab-btn {
+  color: #000000 !important;
+  font-size: 25px !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+
+.ant-tabs-tab-btn:focus {
+  color: #3c8f33 !important;
+  font-size: 25px !important;
+  font-weight: bold !important;
+  margin: 0 auto;
+}
+
+.ant-tabs-ink-bar {
+  bottom: 8px !important;
+  height: 3px !important;
+  background: #3c8f33 !important;
+}
+
+.ant-tabs-nav {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.ant-tabs-nav-wrap {
+  position: static !important;
+  display: flex !important;
+  flex: none !important;
+  align-self: auto !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  transform: none !important;
+}
+
+.ant-tabs-tabpane {
+  padding: 15px;
+}
+
+:where(.css-dev-only-do-not-override-os2fvf).ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap, :where(.css-dev-only-do-not-override-os2fvf).ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-wrap
+
+ {
+    position: relative;
+    display: flex
+;
+    flex: auto;
+    align-self: stretch;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: translate(0);
+} 
+
+/* .ant-tabs-content-holder {
+  display: flex;
+  justify-content: center;
+} */
+
+.ListOfOpisRoseSun li::marker {
+  content: "- ";
+  font-size: 20px;
+  color: #000;
+}
+
+.TabsSection .ant-tabs,
+.TabsSection .ant-tabs-content,
+.TabsSection .ant-tabs-tabpane {
+  background: none !important;
+  background-color: transparent !important;
+}

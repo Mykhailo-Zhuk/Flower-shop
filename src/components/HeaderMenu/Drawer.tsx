@@ -27,7 +27,6 @@ const App: React.FC = () => {
       </button>
 
       <Drawer
-        title="Drawer with extra actions"
         placement={placement}
         width={500}
         onClose={onClose}
@@ -41,20 +40,41 @@ const App: React.FC = () => {
           </Space>
         }
       >
-        <Link style={{ color: "black" }} to={"/catalog-of-roses"}>
-          Roses
-        </Link>
-        <br />
-        <Link style={{ color: "black" }} to={"/catalog-england-rose"}>
-          England Roses
-        </Link>
-        <br />
-        <Link style={{ color: "black" }} to={"/catalog-tea-hybride-rose"}>
-          Tea-Hybride Roses
-        </Link>
-        <br />
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <details>
+          <summary>
+            <Link className="LinkToRoses" to={"/catalog-of-roses"}>
+              КАТАЛОГ РОЗ
+            </Link>
+          </summary>
+
+          <Link
+            className="LinkToRoses"
+            to={"/catalog-of-roses/catalog-england-rose"}
+          >
+            АНГЛІЙСЬКІ
+          </Link>
+          <br />
+          <Link
+            className="LinkToRoses"
+            to={"/catalog-of-roses/catalog-tea-hybride-rose"}
+          >
+            ЧАЙНО-ГІБРИДНІ
+          </Link>
+          <br />
+          <Link
+            className="LinkToRoses"
+            to={"catalog-of-roses/catalog-creeping-rose"}
+          >
+            ПЛЕТИСТІ
+          </Link>
+          <br />
+          <Link
+            className="LinkToRoses"
+            to={"/catalog-of-roses/catalog-borders-rose"}
+          >
+            БОРДЮРНI
+          </Link>
+        </details>
       </Drawer>
     </>
   );

@@ -69,6 +69,14 @@ body {
   margin-bottom: 15px;
 }
 
+h2.headerOfTitlePerevagy {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
 .headerOfCatolog {
   text-transform: uppercase;
   font-size: 50px;
@@ -128,11 +136,24 @@ h3.advantages-title {
   max-height: 100vh;
 }
 
+.LinkToRoses {
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+}
+
 .LiMenuSelect {
   display: flex;
   justify-content: center;
   place-items: center;
   gap: 5px;
+}
+
+.SectionColumnsGaps {
+  display: flex;
+  flex-direction: column;
+  columns: 1;
+  gap: 35px;
 }
 
 .Section1 {
@@ -158,9 +179,9 @@ h3.advantages-title {
   justify-content: center;
 }
 
-.Section8 {
+.Section8Background {
   background-color: #245e2c;
-  margin: 20px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
   padding: 25px;
 }
 

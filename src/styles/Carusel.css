@@ -71,6 +71,11 @@
   justify-content: center;
 }
 
+.ratingCenter {
+  display: flex;
+  justify-content: center;
+}
+
 .SectionCaruselBackground {
   background-color: #b8ccae;
   padding: 20px;
@@ -85,17 +90,11 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: auto;
-  height: 30;
-  border-radius: 50%;
-  background: #fff;
-  color: rgba(0, 0, 0, 0.3);
-  text-align: center;
+  background: none;
 
-  font-size: 24px;
   z-index: 10;
   cursor: pointer;
-  border: 2px solid #b8ccae;
+  border: none;
 }
 
 .custom-arrow-right {
@@ -103,14 +102,9 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: auto;
-  height: 30;
-  border-radius: 50%;
-  background: #fff;
-  color: rgba(0, 0, 0, 0.3);
-  border: 2px solid #b8ccae;
-  text-align: center;
-  font-size: 24px;
+  background: none;
+  border: none;
+
   z-index: 10;
   cursor: pointer;
 }
@@ -142,6 +136,7 @@
   height: 250px;
   position: relative;
   margin: 0 auto;
+  padding: 5px;
 }
 
 .PriceOfCaruselGreenRosesEngland {

@@ -33,22 +33,22 @@ const CatalogOfPopularRosesTypes = [
   {
     TitleTypeOfRose: "Чайно-Гібридні",
     imgTypeOfRose: "/public/ЕлементиСаджанціТроянд1/15.png",
-    route: "/catalog-tea-hybride-rose",
+    route: "/catalog-of-roses/catalog-tea-hybride-rose",
   },
   {
     TitleTypeOfRose: "БОРДЮРНI",
     imgTypeOfRose: "/public/ЕлементиСаджанціТроянд1/16.png",
-    route: "/catalog-borders-rose",
+    route: "/catalog-of-roses/catalog-borders-rose",
   },
   {
     TitleTypeOfRose: "ПЛЕТИСТІ",
     imgTypeOfRose: "/public/ЕлементиСаджанціТроянд1/17.png",
-    route: "/catalog-england-rose",
+    route: "/catalog-of-roses/catalog-borders-rose",
   },
   {
     TitleTypeOfRose: "АНГЛІЙСЬКІ",
     imgTypeOfRose: "/public/ЕлементиСаджанціТроянд1/18.png",
-    route: "/catalog-england-rose",
+    route: "/catalog-of-roses/catalog-england-rose",
   },
 ];
 
@@ -257,6 +257,10 @@ const CareAndSecretsOfGrowingRoses = [
   },
 ];
 
+const carouselTitlePopularyti = [
+  { AlsoWatchTitle: "Дивіться також" },
+  { WatchedTitle: "Переглянуті" },
+];
 /*Catalog Of England Rose */
 const FirstEnglandRoseCarusel = [
   {
@@ -379,6 +383,7 @@ const FirstTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Ред Інтуішн»",
@@ -390,6 +395,7 @@ const FirstTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Ред Інтуішн»",
@@ -401,6 +407,7 @@ const FirstTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -415,6 +422,7 @@ const SecondTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Хай Меджик»",
@@ -426,6 +434,7 @@ const SecondTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Хай Меджик»",
@@ -437,6 +446,7 @@ const SecondTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -451,6 +461,7 @@ const ThirdyTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Боїнг»",
@@ -462,6 +473,7 @@ const ThirdyTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -476,6 +488,7 @@ const FourthTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Зелена Планета»",
@@ -487,6 +500,7 @@ const FourthTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -501,6 +515,7 @@ const FifthTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Фолос»",
@@ -512,6 +527,7 @@ const FifthTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -526,6 +542,7 @@ const SixthTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Белла Віта»",
@@ -537,6 +554,7 @@ const SixthTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -551,6 +569,7 @@ const SeventhTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Принц Жардіньє»",
@@ -562,6 +581,7 @@ const SeventhTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -576,6 +596,7 @@ const EihgthTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Гіннес»",
@@ -587,6 +608,7 @@ const EihgthTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -601,6 +623,7 @@ const NinethTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Блек Баккара»",
@@ -612,6 +635,7 @@ const NinethTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -626,6 +650,7 @@ const TenthTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Аква»",
@@ -637,6 +662,7 @@ const TenthTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -651,6 +677,7 @@ const EleventhTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Блакитний Ніл»",
@@ -662,6 +689,7 @@ const EleventhTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -676,6 +704,7 @@ const TwelveTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Кьорн»",
@@ -687,6 +716,7 @@ const TwelveTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -701,6 +731,7 @@ const ThirteenTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Версілія»",
@@ -712,6 +743,7 @@ const ThirteenTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
 
@@ -726,6 +758,7 @@ const FourteenTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Ранок Парижу»",
@@ -737,10 +770,39 @@ const FourteenTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
+    link: "#",
   },
 ];
+
+const FifteenTeaHybrideRoseCarusel = [
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Сонечко»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/42.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/42.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/42.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+    link: "/catalog-of-roses/catalog-tea-hybride-sun-rose",
+  },
+  {
+    titleOfTeaHybrideRose: "Чайно-гібридна троянда «Сонечко»",
+    imagesRoses: {
+      img1: "/public/ЕлементиЧайно-гібридніТроянди/42.png",
+      img2: "/public/ЕлементиЧайно-гібридніТроянди/42.png",
+      img3: "/public/ЕлементиЧайно-гібридніТроянди/42.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfTeaHybride: "85.00 грн",
+    rating: 4,
+    link: "/catalog-of-roses/catalog-tea-hybride-sun-rose",
+  },
+];
+
 /*Catalog Of England Rose */
-/*Catalog Of Tea-Hybride Rose */
+/*Catalog Of Borders Rose */
 const FirstBordersRoseCarusel = [
   {
     titleOfBordersRoseCarusel: "Бордюрна троянда «Лавлі Грін» ",
@@ -1141,9 +1203,531 @@ const SixteenBordersRoseCarusel = [
   },
 ];
 /*Catalog Of Borders Rose */
+/*Catalog Of Сreeping Rose */
+const FirstСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const SecondСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const ThirdyСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const FourthСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const FifthСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const SixthСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const SeventhСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const EihgthСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const NinethСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const TenthСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const EleventhСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const TwelveСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const ThirteenСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const FourteenСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const FifthteenСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+
+const SixteenСreepingRoseCarusel = [
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+  {
+    titleOfСreepingRoseCarusel: "Плетиста троянда «Клаймінг Вайт»",
+    imagesRoses: {
+      img1: "/public/ЕлементиПлетистіТроянди/24.png",
+      img2: "/public/ЕлементиПлетистіТроянди/24.png",
+      img3: "/public/ЕлементиПлетистіТроянди/24.png",
+    },
+    IsAvailable: "В наявності",
+    PriceOfСreepingRoseCarusel: "100.00 грн",
+    rating: 4,
+  },
+];
+/*Catalog Of Сreeping Rose */
+
+/*Tabs*/
+const TabsData: TabContent[] = [
+  {
+    tabTitle: "Доставка",
+    sections: [
+      {
+        heading: "Нова пошта:",
+        items: [
+          "вартість доставки за тарифами перевізника, пакування за наш рахунок",
+          "доставка до відділення",
+          "доставка кур’єром",
+        ],
+      },
+      {
+        heading: "Укрпошта:",
+        items: [
+          "вартість доставки за тарифами перевізника, пакування за наш рахунок",
+          "доставка до відділення",
+          "доставка кур’єром",
+        ],
+      },
+    ],
+  },
+  {
+    tabTitle: "Оплата",
+    sections: [
+      {
+        heading: "Спосіб оплати:",
+        items: [
+          "Оплата при отриманні (накладений платіж)",
+          "Онлайн-оплата на сайті (через банківську карту)",
+          "Передплата на рахунок ФОП",
+        ],
+      },
+      {
+        heading: "Умови передплати:",
+        items: [
+          "Для замовлень від 500 грн передплата 200 грн",
+          "Передплата гарантує резервування обраних саджанців",
+        ],
+      },
+      {
+        heading: "Безпека платежів:",
+        items: [
+          "Усі онлайн-оплати захищені сучасними системами безпеки",
+          "Персональні дані клієнтів не передаються третім особам",
+        ],
+      },
+    ],
+  },
+  {
+    tabTitle: "Гарантія",
+    sections: [
+      {
+        heading: "Гарантія якості саджанців:",
+        items: [
+          " Реалізуємо тільки здорові саджанці з добре розвиненою кореневою системою",
+          " Усі саджанці проходять ретельний контроль перед відправкою",
+          "Обмін або повернення можливі згідно з законодавством України",
+        ],
+      },
+      {
+        heading: "Гарантія відповідності сорту:",
+        items: [
+          " Гарантуємо повну відповідність сорту",
+          "У разі невідповідності – заміна саджанця або компенсація",
+        ],
+      },
+      {
+        heading: "Гарантія приживлюваності:",
+        items: [
+          " Надані рекомендації щодо посадки та догляду допоможуть саджанцям успішно приживитися",
+          "Гарантія розповсюджується лише за дотримання рекомендацій з посадки",
+        ],
+      },
+      {
+        heading: "Гарантія безпечної доставки:",
+        items: [
+          " Саджанці надійно пакуються для транспортування",
+          "У разі пошкодження під час доставки – безкоштовна заміна або компенсація",
+        ],
+      },
+    ],
+  },
+];
+/*Tabs*/
+
+/*Sun-Rose Detalic*/
+const OpisOfSunRose = [
+  {
+    titleOfSection: "Опис",
+
+    description:
+      "Троянда «Сонечко» – це чудовий сорт чайногібридної троянди, що зачаровує великими густомахровими квітами насиченого жовтого кольору, які нагадують сонячні промені. Вона стане центром уваги у саду завдяки яскравому забарвленню, довготривалому цвітінню і витонченому аромату. Висока стійкість до хвороб і морозостійкість роблять цю троянду чудовим вибором для будь-якої ділянки. ",
+    titleOfSectionCharecter: "Основні характеристики:",
+    img1: "/public/ЕлементиОписТроянди/20.png",
+    characteristics: {
+      type: "чайно-гібридна троянда",
+      height: "90–120 см",
+      color: "насичений жовтий",
+      flowerSize: "10–12 см, густомахрова (40–50 пелюсток)",
+    },
+  },
+];
 
 export default MenuDataMainPage;
 export type MenuDataMainPageType = typeof MenuDataMainPage;
+
+export type TabContent = {
+  tabTitle: string;
+  sections: {
+    heading: string;
+    items: string[];
+  }[];
+};
+
+export type CatalogHybridRoseSeedlingsType = {
+  imgTypeOfRose: string;
+  TitleTypeOfRose: string;
+  route: string;
+  // додайте інші поля, якщо потрібно
+};
 
 export {
   CatalogDataMainPage,
@@ -1170,6 +1754,7 @@ export {
   TwelveTeaHybrideRoseCarusel,
   ThirteenTeaHybrideRoseCarusel,
   FourteenTeaHybrideRoseCarusel,
+  FifteenTeaHybrideRoseCarusel,
   FirstBordersRoseCarusel,
   SecondBordersRoseCarusel,
   ThirdyBordersRoseCarusel,
@@ -1186,4 +1771,23 @@ export {
   FourteenBordersRoseCarusel,
   FifthteenBordersRoseCarusel,
   SixteenBordersRoseCarusel,
+  carouselTitlePopularyti,
+  FirstСreepingRoseCarusel,
+  SecondСreepingRoseCarusel,
+  ThirdyСreepingRoseCarusel,
+  FourthСreepingRoseCarusel,
+  FifthСreepingRoseCarusel,
+  SixthСreepingRoseCarusel,
+  SeventhСreepingRoseCarusel,
+  EihgthСreepingRoseCarusel,
+  NinethСreepingRoseCarusel,
+  TenthСreepingRoseCarusel,
+  EleventhСreepingRoseCarusel,
+  TwelveСreepingRoseCarusel,
+  ThirteenСreepingRoseCarusel,
+  FourteenСreepingRoseCarusel,
+  FifthteenСreepingRoseCarusel,
+  SixteenСreepingRoseCarusel,
+  TabsData,
+  OpisOfSunRose,
 };

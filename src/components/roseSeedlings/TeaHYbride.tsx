@@ -1,6 +1,7 @@
 import HeaderMenu from "../HeaderMenu/HeaderMenu";
 import "../../styles/Carusel.css";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 import {
   FirstTeaHybrideRoseCarusel,
   SecondTeaHybrideRoseCarusel,
@@ -16,6 +17,7 @@ import {
   TwelveTeaHybrideRoseCarusel,
   ThirteenTeaHybrideRoseCarusel,
   FourteenTeaHybrideRoseCarusel,
+  FifteenTeaHybrideRoseCarusel,
 } from "../../Data/mainMenuData";
 import UniversalCarusel from "../Carusel/UniversalCarusel";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
@@ -123,7 +125,16 @@ const TeaHYbride = () => {
           slidesToShow={2}
         />
       </section>
-
+      <section className="SectionCaruselBackground TopMarginSectionOfCatalogCarusel">
+        <UniversalCarusel
+          items={FifteenTeaHybrideRoseCarusel}
+          type="teahybride"
+          slidesToShow={2}
+        />
+        <Link to="catalog-of-roses/catalog-tea-hybride-sun-rose">
+          Перейти до Sun Rose
+        </Link>
+      </section>
       <Footer />
     </>
   );

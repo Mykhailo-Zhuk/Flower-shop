@@ -1,0 +1,42 @@
+.titleOfOpis {
+  color: #1f912e;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* .SectionColumnsGaps {
+  display: flex;
+  flex-direction: column;
+  columns: 1;
+  gap: 35px;
+} */
+
+.ListOfOpisRoseSun {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.OpisSectionContainer {
+  margin-bottom: 40px; /* або інше значення */
+}
+
+.descriptionOfOpis {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.TabsSection {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Якщо треба прибрати фон саме у вкладок Ant Design */
+.TabsSection .ant-tabs,
+.TabsSection .ant-tabs-content,
+.TabsSection .ant-tabs-tabpane {
+  background: none !important;
+  background-color: transparent !important;
+}

@@ -1,47 +1,43 @@
 import type React from "react";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import Link from "@mui/material/Link";
 import {
   CatalogOfPopularRosesTypes,
   TextForCatalogPage,
   CareAndSecretsOfGrowingRoses,
+  CaruselHybridRoseSeedlings,
+  carouselTitlePopularyti,
 } from "../../Data/mainMenuData";
 import HeaderMenu from "../HeaderMenu/HeaderMenu";
 import Footer from "../Footer/Footer";
 import UniversalCarusel from "../Carusel/UniversalCarusel";
 import "../../styles/CatalogOfRoses.css";
-import { CaruselHybridRoseSeedlings } from "../../Data/mainMenuData";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import SortByInput from "../SortBy/SortByInput";
-
-type CatalogHybridRoseSeedlingsType = {
-  TitleTypeOfRose: string;
-  imgTypeOfRose: string;
-  route: string;
-};
-
-type TextPrefaceOfCatalogRose = {
-  TitleOfPrefaceOfCatalogBlack?: string;
-  prefaceOfCatalogOfRoses?: string;
-  GreenTitleOfCatalogOfRoses?: string;
-  TextOfCatalogOfRoses?: string;
-  UpdateCatalogpreface?: string;
-  linkGreenOfCatalogRoses?: string;
-};
-
-type CareAndSecretsOfRoses = {
-  TitleOfSecretsOfGrowingRoses?: string;
-  prefaceCareAndSecretsOfGrowingRoses?: string;
-  TypesOfCares?: string;
-  ImagesTypeOfCare?: string;
-  ulOfCareOfRoses?: string | Record<string, string>;
-};
+import { getViewedRoses } from "../../lib/utils";
+import type { ViewedRose } from "../../lib/utils";
+import { useEffect, useState } from "react";
+import type { CatalogHybridRoseSeedlingsType } from "../../Data/mainMenuData";
 
 const RoseCatalog: React.FC = () => {
+  const [viewed, setViewed] = useState<ViewedRose[]>([]);
+
+  // Оновлювати при кожному відкритті сторінки
+  useEffect(() => {
+    const updateViewed = () => {
+      const roses = getViewedRoses();
+      setViewed(roses);
+    };
+
+    updateViewed();
+
+    window.addEventListener("storage", updateViewed);
+    return () => window.removeEventListener("storage", updateViewed);
+  }, []);
+
   const catalogPopularRoses: CatalogHybridRoseSeedlingsType[] =
     CatalogOfPopularRosesTypes;
-  const textOfPreface: TextPrefaceOfCatalogRose = TextForCatalogPage[0];
-  const textCareOfRose =
-    CareAndSecretsOfGrowingRoses[0] as CareAndSecretsOfRoses;
+
   return (
     <>
       <HeaderMenu />
@@ -58,7 +54,12 @@ const RoseCatalog: React.FC = () => {
                   className="CatalogPopularImages"
                   alt={rose.TitleTypeOfRose}
                 />
-                <Link className="LinksStyles" to={rose.route}>
+                <Link
+                  className="LinksStyles"
+                  component={RouterLink}
+                  to={rose.route}
+                  underline="none"
+                >
                   <h3 className="CatalogPopularTitle">
                     {rose.TitleTypeOfRose}
                   </h3>
@@ -72,7 +73,11 @@ const RoseCatalog: React.FC = () => {
         style={{ marginTop: "70px" }}
         className="SectionCaruselBackground"
       >
-        <UniversalCarusel items={CaruselHybridRoseSeedlings} type="catalog" />
+        <UniversalCarusel
+          items={CaruselHybridRoseSeedlings}
+          TitleOfPopularRosesTypes={carouselTitlePopularyti[0].AlsoWatchTitle}
+          type="catalog"
+        />
       </section>
       <section className="Section2Rose">
         {TextForCatalogPage.map((item, idx) => (
@@ -111,14 +116,21 @@ const RoseCatalog: React.FC = () => {
       <section className="Section3Rose">
         {CareAndSecretsOfGrowingRoses.map((liItem, idx) => (
           <div key={idx} className="">
-            <h2>{liItem.TitleOfSecretsOfGrowingRoses}</h2>
-            <p>{liItem.prefaceCareAndSecretsOfGrowingRoses}</p>
-            <img src={liItem.ImagesTypeOfCare} alt="" />
-            <div>{liItem.TypesOfCares}</div>
+            <h2 className="TitleOfPrefaceBlackBold">
+              {liItem.TitleOfSecretsOfGrowingRoses}
+            </h2>
+            <p className="TitleOfPrefaceBlackBold">
+              {liItem.prefaceCareAndSecretsOfGrowingRoses}
+            </p>
+
+            <div className="HowToCareIconAndTextContainer">
+              <img src={liItem.ImagesTypeOfCare} height={"60%"} alt="" />
+              <p className="HowToCareIconAndText">{liItem.TypesOfCares}</p>
+            </div>
             <div>
               {liItem.ulOfCareOfRoses &&
               typeof liItem.ulOfCareOfRoses === "object" ? (
-                <ul>
+                <ul className="ULLiOfCare">
                   {Object.values(liItem.ulOfCareOfRoses).map((val, i) => (
                     <li key={i}>{val}</li>
                   ))}
@@ -130,6 +142,18 @@ const RoseCatalog: React.FC = () => {
           </div>
         ))}
       </section>
+      {viewed.length > 0 && (
+        <section
+          style={{ marginTop: "70px" }}
+          className="SectionCaruselBackground"
+        >
+          <UniversalCarusel
+            items={viewed}
+            type="viewed"
+            TitleOfPopularRosesTypes="Переглянуті товари"
+          />
+        </section>
+      )}
       <Footer />
     </>
   );

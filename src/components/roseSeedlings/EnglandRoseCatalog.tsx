@@ -9,7 +9,6 @@ import {
 import UniversalCarusel from "../Carusel/UniversalCarusel";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 
-
 const EnglandRoseCatalog = () => {
   return (
     <>

@@ -1,8 +1,12 @@
 import "../styles/mainPage.css";
-import IndexCarusel from "./Carusel/IndexCarusel";
+import UniversalCarusel from "./Carusel/UniversalCarusel";
 import HeaderMenu from "./HeaderMenu/HeaderMenu";
 import Footer from "./Footer/Footer";
-import { CatalogDataMainPage, advantagesMainPage } from "../Data/mainMenuData";
+import {
+  CatalogDataMainPage,
+  advantagesMainPage,
+  CaruselHybridRoseSeedlings,
+} from "../Data/mainMenuData";
 
 type CatalogItem = {
   titleOfCatalog: string;
@@ -12,7 +16,7 @@ type CatalogItem = {
 const MainPage: React.FC = () => {
   const catalogItems: CatalogItem[] = CatalogDataMainPage;
   return (
-    <div>
+    <div className="SectionColumnsGaps">
       <HeaderMenu />
       <section className="Section3">
         <video
@@ -55,47 +59,59 @@ const MainPage: React.FC = () => {
         <div className="titleOfCatalog">
           <h2 className="headerOfCarulesTitle">ТОП продажів</h2>
         </div>
-        <IndexCarusel slides={CatalogDataMainPage} type="catalog" />
+        <UniversalCarusel
+          items={CaruselHybridRoseSeedlings}
+          type="catalogOfHomePage"
+        />
       </section>
       <section className="Section6">
         <div className="titleOfCatalog">
           <h2 className="headerOfCarulesTitle">Популярні товари</h2>
         </div>
-        <IndexCarusel slides={CatalogDataMainPage} type="catalog" />
+        <UniversalCarusel
+          items={CaruselHybridRoseSeedlings}
+          type="catalogOfHomePage"
+        />
       </section>
       <section className="Section7">
         <div className="titleOfCatalog">
           <h2 className="headerOfCarulesTitle">Акційні товари</h2>
         </div>
-        <IndexCarusel slides={CatalogDataMainPage} type="catalog" />
+        <UniversalCarusel
+          items={CaruselHybridRoseSeedlings}
+          type="catalogOfHomePage"
+        />
       </section>
-      <div className="titleOfCatalogWithoutBackground">
-        <h2 className="headerOfTitle">Новинки</h2>
-      </div>
+
       <section className="Section8">
-        <div className="DisplayCenter">
-          <div className="ColumnOfPerevagy">
-            {advantagesMainPage.map((item, idx) => (
-              <div key={idx} className="advantages-item">
-                <img
-                  src={item.img.replace("../../public", "")}
-                  alt={item.titleOfAdvantages}
-                  height={"80px"}
-                  className="advantages-image"
-                />
+        <div className="">
+          <h2 className="headerOfTitlePerevagy">НАШІ ПЕРЕВАГИ</h2>
+        </div>
+        <div className="Section8Background">
+          <div className="DisplayCenter">
+            <div className="ColumnOfPerevagy">
+              {advantagesMainPage.map((item, idx) => (
+                <div key={idx} className="advantages-item">
+                  <img
+                    src={item.img.replace("../../public", "")}
+                    alt={item.titleOfAdvantages}
+                    height={"80px"}
+                    className="advantages-image"
+                  />
 
-                <h3 className="advantages-title">
-                  {item.NumbersWithBackground &&
-                    item.NumbersWithBackground.trim() !== "" && (
-                      <em className="BackgroundNumber">
-                        {item.NumbersWithBackground}
-                      </em>
-                    )}
+                  <h3 className="advantages-title">
+                    {item.NumbersWithBackground &&
+                      item.NumbersWithBackground.trim() !== "" && (
+                        <em className="BackgroundNumber">
+                          {item.NumbersWithBackground}
+                        </em>
+                      )}
 
-                  {item.titleOfAdvantages}
-                </h3>
-              </div>
-            ))}
+                    {item.titleOfAdvantages}
+                  </h3>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
