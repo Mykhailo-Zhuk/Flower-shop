@@ -1,48 +1,64 @@
-import "./index.css";
-import App from "./App.tsx";
-import Error from "../src/components/ErrorPage/errorPage.tsx";
-import CatalogOfRoses from "./components/roseSeedlings/RoseCatalog.tsx";
-import EnglandRoseCatalog from "./components/roseSeedlings/EnglandRoseCatalog.tsx";
-import TeaHYbride from "./components/roseSeedlings/TeaHYbride.tsx";
-import BordersRose from "./components/roseSeedlings/BordersRose.tsx";
-import CreepingRoseCatalog from "./components/roseSeedlings/CreepingRoseCatalog.tsx";
-import TeaHybrideSunRoseDetalicPage from "./components/roseSeedlings/TeaHybrideSunRoseDetalicPage.tsx";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React from "react";
+import ReactDOM from "react-dom/client";
+import ErrorPage from "./components/ErrorPage/errorPage";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+// import App from "./App";
+import CatalogLayout from "./components/roseSeedlings/CatalogLayout ";
+// import MainPage from "./components/mainPage";
+import RoseCatalog from "./components/roseSeedlings/RoseCatalog";
+import EnglandRose from "./components/roseSeedlings/EnglandRoseCatalog";
+import TeaHybrid from "./components/roseSeedlings/TeaHYbride";
+import BordersRose from "./components/roseSeedlings/BordersRose";
+import CreepingRoseCatalog from "./components/roseSeedlings/CreepingRoseCatalog";
+import MainPage from "./components/mainPage";
+import SingleTeaRosePage from "./components/roseSeedlings/TeaHybrideSunRoseDetalicPage";
+import "./App.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <MainPage />,
+    errorElement: <ErrorPage />,
   },
   {
-    path: "/error",
-    element: <Error />,
-  },
-  {
-    path: "/catalog-of-roses",
-    element: <CatalogOfRoses />,
-  },
-  {
-    path: "/catalog-of-roses/catalog-england-rose",
-    element: <EnglandRoseCatalog />,
-  },
-  {
-    path: "/catalog-of-roses/catalog-tea-hybride-rose",
-    element: <TeaHYbride />,
-  },
-  {
-    path: "/catalog-of-roses/catalog-borders-rose",
-    element: <BordersRose />,
-  },
-  {
-    path: "/catalog-of-roses/catalog-creeping-rose",
-    element: <CreepingRoseCatalog />,
-  },
-  {
-    path: "/catalog-of-roses/catalog-tea-hybride-sun-rose",
-    element: <TeaHybrideSunRoseDetalicPage />,
+    path: "catalog",
+    element: <CatalogLayout />,
+    children: [
+      {
+        path: "roses",
+        children: [
+          {
+            index: true,
+            element: <RoseCatalog />,
+          },
+          {
+            path: "england",
+            element: <EnglandRose />,
+          },
+          {
+            path: "tea",
+            children: [
+              {
+                index: true,
+                element: <TeaHybrid />,
+              },
+              {
+                path: "sunnyrose",
+                element: <SingleTeaRosePage />, // якщо потрібна деталка
+              },
+            ],
+          },
+          {
+            path: "borders",
+            element: <BordersRose />,
+          },
+          {
+            path: "creeping",
+            element: <CreepingRoseCatalog />,
+          },
+        ],
+      },
+    ],
   },
 ]);
 

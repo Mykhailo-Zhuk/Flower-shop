@@ -4,7 +4,7 @@ import type { DrawerProps } from "antd";
 import { Link } from "react-router-dom";
 import "../../styles/mainPage.css";
 
-const App: React.FC = () => {
+const DrawerMenu: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [placement] = useState<DrawerProps["placement"]>("right");
 
@@ -42,42 +42,34 @@ const App: React.FC = () => {
       >
         <details>
           <summary>
-            <Link className="LinkToRoses" to={"/catalog-of-roses"}>
-              КАТАЛОГ РОЗ
+            <Link className="LinkToRoses" to="/catalog/roses">
+              Каталог троянд
             </Link>
           </summary>
 
-          <Link
-            className="LinkToRoses"
-            to={"/catalog-of-roses/catalog-england-rose"}
-          >
-            АНГЛІЙСЬКІ
+          <Link className="LinkToRoses" to="/catalog/roses/england">
+            Англійські
           </Link>
           <br />
-          <Link
-            className="LinkToRoses"
-            to={"/catalog-of-roses/catalog-tea-hybride-rose"}
-          >
-            ЧАЙНО-ГІБРИДНІ
-          </Link>
-          <br />
-          <Link
-            className="LinkToRoses"
-            to={"catalog-of-roses/catalog-creeping-rose"}
-          >
+          <Link className="LinkToRoses" to="/catalog/roses/creeping">
             ПЛЕТИСТІ
           </Link>
           <br />
-          <Link
-            className="LinkToRoses"
-            to={"/catalog-of-roses/catalog-borders-rose"}
-          >
-            БОРДЮРНI
+          <Link className="LinkToRoses" to="/catalog/roses/borders">
+            БОРДЮРНІ
           </Link>
+          <br />
+          <Link className="LinkToRoses" to="/catalog/roses/tea">
+            Чайно-гібридні
+          </Link>
+          {/* <br />
+          <Link className="LinkToRoses" to="/catalog/roses/tea">
+            ПЛЕТИСТІ
+          </Link> */}
         </details>
       </Drawer>
     </>
   );
 };
 
-export default App;
+export default DrawerMenu;

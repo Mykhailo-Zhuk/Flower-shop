@@ -11,7 +11,6 @@ export default function AccordionUsage() {
       <Accordion
         style={{
           backgroundColor: "#B8CCAE",
-
           border: "none",
           borderRadius: "none",
         }}

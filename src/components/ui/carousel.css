@@ -1,0 +1,33 @@
+@import "../ui/carousel.css";
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+.carousel-previous,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+.carousel-previous {
+  left: 0.5rem;
+}
+.carousel-next {
+  right: 0.5rem;
+}

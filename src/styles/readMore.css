@@ -1,3 +1,80 @@
+.BaseCharacteristics {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  font-size: 20px;
+  place-items: center;
+}
+
+.readMore {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.no-li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.li-green- {
+  list-style: none;
+  padding-left: 1.2em;
+  margin: 5px;
+  font-size: 20px;
+  width: 40%;
+}
+
+.li-green- li {
+  position: relative;
+  color: black;
+  margin-bottom: 0.5em;
+  padding-left: 1.2em;
+}
+
+.li-green- li:before {
+  color: #4d7c5b;
+  content: "-";
+}
+
+.readMoreBtn {
+  padding: 8px 18px;
+  background: none;
+  font-weight: 600;
+  color: #4d7c5b;
+  border: none;
+  border-top: 2px solid #4d7c5b;
+  /* border-radius: 6px; */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+  font-size: 17px;
+}
+
+.readMoreContent {
+  position: relative;
+  background: #fff;
+  border: 1px solid #b8ccae;
+  border-radius: 8px;
+  padding: 30px 20px 20px 20px;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.closeReadMore {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
 .titleOfOpis {
   color: #1f912e;
   text-align: center;

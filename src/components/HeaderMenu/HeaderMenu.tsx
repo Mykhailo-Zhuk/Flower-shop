@@ -21,10 +21,9 @@ const HeaderMenu = () => {
         </div>
       </section>
       <section className="Section2">
-        <div className="DrawerContainer">
-          <Drawer />
-        </div>
         <div className="ulMenu">
+          <Drawer />
+
           <ul className="MenuULSelect">
             {menuItems.map((item, index) => (
               <li key={index}>

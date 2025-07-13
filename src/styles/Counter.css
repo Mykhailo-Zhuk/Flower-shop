@@ -1,8 +1,8 @@
 .counter {
   display: flex;
-
+  justify-content: center;
+  place-items: center;
   margin: 0 auto;
-
   width: fit-content;
   gap: 5px;
 }

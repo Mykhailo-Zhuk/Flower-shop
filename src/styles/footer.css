@@ -2,12 +2,16 @@
   background-color: #245e2c;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
 }
 
 .copyRight {
   font-style: normal;
   font-size: 30px;
+}
+
+.css-1808mag-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+  margin: 0px 0 !important;
 }
 
 .footerText {
@@ -24,12 +28,14 @@
   color: white;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  padding: 10px;
 }
 
 .icons {
   display: flex;
   justify-content: center;
   gap: 15px;
+  padding: 15px;
 }
 
 input[type="checkbox"] {
@@ -38,6 +44,7 @@ input[type="checkbox"] {
 }
 
 .checkBox {
+  padding: 10px;
   display: flex;
   justify-content: center;
   place-items: center;
@@ -64,7 +71,7 @@ input[type="checkbox"] {
 
 .logoImageFooter {
   margin-top: 120px;
-  width: 200px;
+  width: 300px;
   height: auto;
   z-index: 2;
   position: relative;
@@ -177,4 +184,29 @@ input[type="checkbox"] {
 .input:focus {
   outline: none;
   border-color: #148cd1;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 200px) {
+  .logoOfFooter {
+    background-image: url("/ГоловнаСторінка/46.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    /* margin-left: 50%;
+  transform: translateX(-50%);
+  left: 0; */
+  }
+
+  .logoImageFooter {
+    margin-top: 90px;
+    width: 260px;
+    height: auto;
+    z-index: 2;
+    position: relative;
+  }
 }

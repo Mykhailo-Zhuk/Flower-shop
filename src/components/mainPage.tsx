@@ -1,11 +1,13 @@
 import "../styles/mainPage.css";
 import UniversalCarusel from "./Carusel/UniversalCarusel";
 import HeaderMenu from "./HeaderMenu/HeaderMenu";
+// import { CarouselDemo } from "./Carusel/CarouselSize";
 import Footer from "./Footer/Footer";
 import {
   CatalogDataMainPage,
   advantagesMainPage,
   CaruselHybridRoseSeedlings,
+  ReviewsDataMainPage,
 } from "../Data/mainMenuData";
 
 type CatalogItem = {
@@ -60,8 +62,10 @@ const MainPage: React.FC = () => {
           <h2 className="headerOfCarulesTitle">ТОП продажів</h2>
         </div>
         <UniversalCarusel
+          slidesToShow={2}
           items={CaruselHybridRoseSeedlings}
           type="catalogOfHomePage"
+          arrowType="dark-green"
         />
       </section>
       <section className="Section6">
@@ -69,8 +73,10 @@ const MainPage: React.FC = () => {
           <h2 className="headerOfCarulesTitle">Популярні товари</h2>
         </div>
         <UniversalCarusel
+          slidesToShow={2}
           items={CaruselHybridRoseSeedlings}
           type="catalogOfHomePage"
+          arrowType="dark-green"
         />
       </section>
       <section className="Section7">
@@ -78,8 +84,10 @@ const MainPage: React.FC = () => {
           <h2 className="headerOfCarulesTitle">Акційні товари</h2>
         </div>
         <UniversalCarusel
+          slidesToShow={2}
           items={CaruselHybridRoseSeedlings}
           type="catalogOfHomePage"
+          arrowType="dark-green"
         />
       </section>
 
@@ -95,7 +103,6 @@ const MainPage: React.FC = () => {
                   <img
                     src={item.img.replace("../../public", "")}
                     alt={item.titleOfAdvantages}
-                    height={"80px"}
                     className="advantages-image"
                   />
 
@@ -115,37 +122,49 @@ const MainPage: React.FC = () => {
           </div>
         </div>
       </section>
-      <section className="Section9">
-        <div className="titleOfSiteOpis">
-          <h1>САДЖАНЦІ ДЕРЕВ ТА РОСЛИН ВІД МАГАЗИНУ 'ALYONA'S GARDEN'</h1>
+      <section className="SectionCaruselOfReviews">
+        <div className="">
+          <h2 className="headerOfTitlePerevagy">Відгуки про нас</h2>
         </div>
-        <div className="columnTextImage">
-          <div className="mainSubjectOfCompani">
-            <p>
-              Шановні друзі! <br /> Ласкаво просимо до нашого інтернет-магазину
-              саджанців. Вже більше 10-ти років ми вирощуємо різні рослини,
-              величезну кількість плодових дерев як для садівників-початківців,
-              так і для любителів живої краси на своїй ділянці, пропонуємо
-              оптові пропозиції для фермерських господарств, співпрацюємо з
-              садовими центрами та ландшафтними дизайнерами. Широкий асортимент
-              товару допоможе нашим покупцям підібрати усе необхідне для
-              садівництва чи городництва. Ми піклуємося про те, щоб Ви вчасно
-              отримали свою покупку у належному стані. На нашому сайті Ви можете
-              залишити свої відгуки. Наші менеджери допоможуть Вам зробити
-              правильний вибір, ознайомлять з кожним видом саджанців, нададуть
-              професійну допомогу. Ми відправляємо саджанці поштою по всій
-              підконтрольній території України.
-            </p>
-          </div>
-          <div className="imageOfMainSubject">
-            <img
-              src="/public/ГоловнаСторінка/43.png"
-              alt="mainSubjectImage"
-              height={"100%"}
-              width={"100%"}
-              className="imageOfMainSubjectImage"
-            />
-          </div>
+        <UniversalCarusel
+          slidesToShow={1}
+          items={ReviewsDataMainPage}
+          type="reviews"
+          arrowType="dark-green"
+        />
+      </section>
+      <section className="Section9">
+        <div className="text-block">
+          <h1>САДЖАНЦІ ДЕРЕВ ТА РОСЛИН ВІД МАГАЗИНУ</h1>
+          <h2>«ALYONA’S GARDEN»</h2>
+          <p>
+            Шановні друзі! Ласкаво просимо до нашого інтернет-магазину
+            саджанців. Вже більше 10-ти років ми вирощуємо різні рослини,
+            величезну кількість плодових дерев як для садівників-початківців,
+            так і для любителів живої краси на своїй ділянці, пропонуємо оптові
+            пропозиції для фермерських господарств, співпрацюємо з садовими
+            центрами та ландшафтними дизайнерами.
+          </p>
+          <p>
+            Широкий асортимент товару допоможе нашому покупцю підібрати усе
+            необхідне для садівництва чи городництва. Ми піклуємося про те, щоб
+            Ви вчасно отримали свою покупку з нашого складу. На нашому сайті Ви
+            можете залишити свої відгуки. Наші менеджери завжди охоче
+            відповідають, консультують і вибирають замовлення з кожним
+            індивідуально, надаючи професійні поради.
+          </p>
+          <p>
+            Ми відправляємо саджанці поштою по всій відкритій території України.
+          </p>
+        </div>
+        <div className="imageOfMainSubject">
+          <img
+            src="/public/ГоловнаСторінка/43.png"
+            alt="mainSubjectImage"
+            height={"100%"}
+            width={"100%"}
+            className="imageOfMainSubjectImage"
+          />
         </div>
       </section>
       <Footer />

@@ -22,6 +22,30 @@ const MenuDataMainPage = [
   },
 ];
 
+const ReviewsDataMainPage = [
+  {
+    icon: "/public/ГоловнаСторінка/38.png",
+    nameOfUser: "Софія",
+    textOfReview:
+      "Замовляла саджанці троянд, дуже задоволена.Саджанці приїхали в чудовому стані, пакування хороше. Дякую вам за вашу роботу!",
+    rating: 5,
+  },
+  {
+    icon: "/public/ГоловнаСторінка/38.png",
+    nameOfUser: "Софія",
+    textOfReview:
+      "Замовляла саджанці троянд, дуже задоволена.Саджанці приїхали в чудовому стані, пакування хороше. Дякую вам за вашу роботу!",
+    rating: 5,
+  },
+  {
+    icon: "/public/ГоловнаСторінка/38.png",
+    nameOfUser: "Софія",
+    textOfReview:
+      "Замовляла саджанці троянд, дуже задоволена.Саджанці приїхали в чудовому стані, пакування хороше. Дякую вам за вашу роботу!",
+    rating: 5,
+  },
+];
+
 const sortOptions = [
   { value: "popular-desc", label: "За популярністю (по спадаючій)" },
   { value: "popular-asc", label: "За популярністю (по зростанню)" },
@@ -33,22 +57,22 @@ const CatalogOfPopularRosesTypes = [
   {
     TitleTypeOfRose: "Чайно-Гібридні",
     imgTypeOfRose: "/public/ЕлементиСаджанціТроянд1/15.png",
-    route: "/catalog-of-roses/catalog-tea-hybride-rose",
+    route: "/catalog/roses/tea",
   },
   {
     TitleTypeOfRose: "БОРДЮРНI",
     imgTypeOfRose: "/public/ЕлементиСаджанціТроянд1/16.png",
-    route: "/catalog-of-roses/catalog-borders-rose",
+    route: "/catalog/roses/borders",
   },
   {
     TitleTypeOfRose: "ПЛЕТИСТІ",
     imgTypeOfRose: "/public/ЕлементиСаджанціТроянд1/17.png",
-    route: "/catalog-of-roses/catalog-borders-rose",
+    route: "/catalog/roses/creeping",
   },
   {
     TitleTypeOfRose: "АНГЛІЙСЬКІ",
     imgTypeOfRose: "/public/ЕлементиСаджанціТроянд1/18.png",
-    route: "/catalog-of-roses/catalog-england-rose",
+    route: "/catalog/roses/england",
   },
 ];
 
@@ -167,28 +191,6 @@ const advantagesMainPage = [
 
 const TextForCatalogPage = [
   {
-    TitleOfPrefaceOfCatalogBlack: "Купити саджанці троянд в «Alyona’s Garden»",
-  },
-  {
-    prefaceOfCatalogOfRoses:
-      " Якщо ви шукаєте якісні саджанці троянд, «Alyona’s Garden» — ідеальне місце для вашого вибору! Тут представлений широкий асортимент сортів: чайно-гібридні, плетисті, бордюрні та англійські троянди.     Якщо ви шукаєте якісні саджанці троянд, «Alyona's Garden» — ідеальне місце для вашого вибору! Тут представлений широкий асортимент сортів: чайно-гібридні, плетисті, бордюрні та англійські троянди.",
-  },
-  {
-    GreenTitleOfCatalogOfRoses: "Якість та надійність",
-    TextOfCatalogOfRoses:
-      "У «Alyona’s Garden» ви отримуєте здорові та міцні саджанці, вирощені у професійних умовах. Кожна рослина проходить ретельний контроль перед відправкою, що гарантує її швидке укорінення у вашому саду.",
-  },
-  {
-    GreenTitleOfCatalogOfRoses: "Зручна доставка по Україні",
-    TextOfCatalogOfRoses:
-      "Замовлення оформлюється легко, а доставка здійснюється в найкоротші терміни. Ви отримуєте свіжі саджанці, готові до посадки, без стресу та зайвих турбот.",
-  },
-  {
-    GreenTitleOfCatalogOfRoses: "Консультації та допомога у виборі",
-    TextOfCatalogOfRoses:
-      "Якщо вам потрібна порада щодо вибору сорту або догляду за трояндами, команда «Alyona’s Garden» завжди готова допомогти!",
-  },
-  {
     UpdateCatalogpreface:
       "Оновіть свій сад разом із «Alyona’s Garden» – вибирайте троянди, які радуватимуть вас роками!",
   },
@@ -201,7 +203,7 @@ const CareAndSecretsOfGrowingRoses = [
   {
     TitleOfSecretsOfGrowingRoses: "Догляд та секрети вирощування троянд",
     prefaceCareAndSecretsOfGrowingRoses:
-      "Вирощування троянд — це мистецтво, яке потребує уваги до деталей. Ось кілька ключових аспектів догляду за трояндами:",
+      "Вирощування троянд — це мистецтво, яке потребує уваги до деталей. Ось кілька ключових аспектів догляду за трояндами: ",
   },
   {
     TypesOfCares: "Посадка",
@@ -785,7 +787,7 @@ const FifteenTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
-    link: "/catalog-of-roses/catalog-tea-hybride-sun-rose",
+    link: "/catalog/roses/tea/sunnyrose",
   },
   {
     titleOfTeaHybrideRose: "Чайно-гібридна троянда «Сонечко»",
@@ -797,7 +799,7 @@ const FifteenTeaHybrideRoseCarusel = [
     IsAvailable: "В наявності",
     PriceOfTeaHybride: "85.00 грн",
     rating: 4,
-    link: "/catalog-of-roses/catalog-tea-hybride-sun-rose",
+    link: "/catalog/roses/tea/sunnyrose",
   },
 ];
 
@@ -1729,6 +1731,52 @@ export type CatalogHybridRoseSeedlingsType = {
   // додайте інші поля, якщо потрібно
 };
 
+export interface Rose {
+  name: string;
+  type: string;
+  height: string;
+  color: string;
+  flowerSize: string;
+  flowering: string;
+  aroma: string;
+  diseaseResistance: string;
+  frostResistance: string;
+  location: string;
+  soil: string;
+  care: {
+    planting: string;
+    watering: string;
+    pruning: string;
+    fertilizing: string;
+    winterCare: string;
+  };
+  storeLink: string;
+}
+
+export const roseData: Rose = {
+  name: "Троянда «Сонечко»",
+  type: "Чайно-гібридна троянда",
+  height: "90-120 см",
+  color: "Насичений жовтий",
+  flowerSize: "10-12 см, густомахрова (40-50 пелюсток)",
+  flowering: "Повторне, рясне хвилями",
+  aroma: "Ніжний, фруктово-квітковий",
+  diseaseResistance: "Висока",
+  frostResistance: "До -23°C",
+  location: "Сонце або легка півтінь",
+  soil: "Пухкий, поживний, добре дренований",
+  care: {
+    planting:
+      "Саджанець висаджується у добре зволожений ґрунт, заглиблюючи кореневу шийку на 3-5 см.",
+    watering: "Регулярний, помірний, без застою води.",
+    pruning: "Весняна – для формування куща, санітарна – протягом сезону.",
+    fertilizing:
+      "Весною – азотні добрива, у період бутонізації – калійно-фосфорні.",
+    winterCare: "Мульчування кореневої зони, укриття у холодних регіонах.",
+  },
+  storeLink: "https://alyonasgarden.ua",
+};
+
 export {
   CatalogDataMainPage,
   CatalogOfPopularRosesTypes,
@@ -1790,4 +1838,5 @@ export {
   SixteenСreepingRoseCarusel,
   TabsData,
   OpisOfSunRose,
+  ReviewsDataMainPage,
 };

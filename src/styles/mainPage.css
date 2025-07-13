@@ -13,6 +13,9 @@ a {
   text-align: center;
 }
 
+img.advantages-image {
+  height: 70px;
+}
 body {
   margin: 0;
 }
@@ -45,7 +48,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .catalog-item {
@@ -74,7 +77,8 @@ h2.headerOfTitlePerevagy {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .headerOfCatolog {
@@ -107,13 +111,22 @@ h3.advantages-title {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  padding: 8px;
 }
 
-.mainSubjectOfCompani {
-  width: 40%;
-  text-align: center;
-  font-size: 25px;
-  font-family: "Montserrat", sans-serif;
+p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+:-webkit-any(article, aside, nav, section) h1 {
+  /* font-size: 1.5em !important; */
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
 }
 
 .MenuULSelect {
@@ -140,6 +153,7 @@ h3.advantages-title {
   color: black;
   font-size: 25px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .LiMenuSelect {
@@ -147,13 +161,6 @@ h3.advantages-title {
   justify-content: center;
   place-items: center;
   gap: 5px;
-}
-
-.SectionColumnsGaps {
-  display: flex;
-  flex-direction: column;
-  columns: 1;
-  gap: 35px;
 }
 
 .Section1 {
@@ -185,11 +192,53 @@ h3.advantages-title {
   padding: 25px;
 }
 
-.titleOfSiteOpis {
-  text-align: center;
-  margin: 0 auto;
-  width: 45%;
+.Section9 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
+
+.SectionColumnsGaps {
+  display: flex;
+  flex-direction: column;
+  columns: 1;
+  gap: 30px;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.text-block {
+  max-width: 600px;
+  margin: 0 auto;
+  /* background-color: #f7f7f7; */
+  padding: 30px 20px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+}
+
+.text-block h1 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.text-block h2 {
+  font-size: 18px;
+  text-align: center;
+  color: #28a745;
+  /* margin-bottom: 20px; */
+}
+/* 
+.Section6 {
+  background-color: gray;
+} */
 
 .titleOfCatalog {
   background-color: #245e2c;
@@ -206,12 +255,42 @@ h3.advantages-title {
   font-family: "Montserrat", sans-serif;
 }
 
-@media screen and (max-width: 600px) and (min-width: 200px) {
+.ulMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+ul {
+  margin-block-start: 0;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 200px) {
+  .advantages-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    place-items: center;
+    text-align: center;
+  }
+
+  .BackgroundNumber {
+    margin: 5px;
+    background-color: white;
+    color: #245e2c;
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 5px;
+    font-style: normal;
+  }
+
   .ColumnOfCatalog {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 0px;
+    gap: 35px;
+    padding: 20px 0px;
   }
 
   .ColumnOfPerevagy {
@@ -227,9 +306,44 @@ h3.advantages-title {
     gap: 20px;
   }
 
+  .catalog-item {
+    height: 250px;
+    width: 350px;
+  }
+
+  img.advantages-image {
+    height: 40%;
+  }
+
+  img.advantages-item {
+    height: 20px;
+    width: 20px;
+  }
+
   .imageOfMainSubject {
     width: 100%;
     height: auto;
+  }
+
+  .headerOfCatolog {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin: 13px;
+  }
+
+  .headerOfCarulesTitle {
+    font-size: 25px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin: 6px;
+  }
+
+  h3.advantages-title {
+    margin: 0;
+    width: 100%;
+    font-size: 15px;
   }
 
   .menu-text {
@@ -237,22 +351,56 @@ h3.advantages-title {
   }
 
   .mainSubjectOfCompani {
-    width: 100%;
-    padding: 15px;
-    text-align: center;
-    font-size: 20px;
+    width: 500px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    font-size: 15px;
+    display: block;
     font-family: "Montserrat", sans-serif;
   }
 
-  h3.advantages-title {
-    margin: 0;
-    width: 100%;
-    font-size: 20px;
+  .Section2 {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    place-items: center;
+    padding: 10px;
+  }
+
+  .Section9 {
+    display: flex;
+    flex-direction: column;
+    columns: 1;
+    gap: 20px;
+  }
+
+  .SectionColumnsGaps {
+    /* display: flex;
+    flex-direction: column;
+    columns: 1; */
+    gap: 35px;
+  }
+
+  .MenuULSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
   }
 
   .titleOfSiteOpis {
     text-align: center;
     margin: 0;
     width: 100%;
+  }
+
+  .titleOfSiteOpis {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
   }
 }

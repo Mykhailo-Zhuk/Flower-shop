@@ -1,5 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+// import { saveViewedRose } from "@/lib/utils";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -7,34 +8,33 @@ export function cn(...inputs: ClassValue[]) {
 
 export type ViewedRose = {
   id: string;
-  title: string;
-  image: string;
-  price: string;
-  rating: number;
-  link: string;
+  name: string;
+  img: string;
 };
 
-const STORAGE_KEY = "viewedRoses";
-
-export const saveViewedRose = (rose: ViewedRose) => {
-  const stored = localStorage.getItem(STORAGE_KEY);
-  let roses: ViewedRose[] = stored ? JSON.parse(stored) : [];
-
-  // Видалити вже наявну, якщо така є
-  roses = roses.filter((r) => r.id !== rose.id);
-
-  // Додати в початок списку
-  roses.unshift(rose);
-
-  // Обмежити кількість, наприклад 10
-  if (roses.length > 10) {
-    roses = roses.slice(0, 10);
+export function getViewedRoses(): ViewedRose[] {
+  const data = localStorage.getItem("viewedRoses");
+  if (!data) return [];
+  try {
+    return JSON.parse(data) as ViewedRose[];
+  } catch {
+    return [];
   }
+}
 
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(roses));
-};
-
-export const getViewedRoses = (): ViewedRose[] => {
-  const stored = localStorage.getItem(STORAGE_KEY);
-  return stored ? JSON.parse(stored) : [];
-};
+export function saveViewedRose(rose: ViewedRose) {
+  const data = localStorage.getItem("viewedRoses");
+  let viewed: ViewedRose[] = [];
+  if (data) {
+    try {
+      viewed = JSON.parse(data) as ViewedRose[];
+    } catch {
+      viewed = [];
+    }
+  }
+  // Додаємо нову троянду, якщо її ще немає
+  if (!viewed.find((r) => r.id === rose.id)) {
+    viewed.push(rose);
+    localStorage.setItem("viewedRoses", JSON.stringify(viewed));
+  }
+}

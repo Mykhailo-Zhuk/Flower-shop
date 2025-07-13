@@ -5,6 +5,7 @@ import {
   CaruselHybridRoseSeedlings,
   carouselTitlePopularyti,
   OpisOfSunRose,
+  ThirdyBordersRoseCarusel,
 } from "../../Data/mainMenuData";
 import Tabs from "../Tabs/Tabs";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
@@ -14,6 +15,7 @@ import "../../styles/TeaHybrideDetalic.css";
 import { getViewedRoses } from "../../lib/utils";
 import type { ViewedRose } from "../../lib/utils";
 import { useEffect, useState } from "react";
+import ReadMore from "../ReadMore/ReadMore";
 
 const currentRose = {
   titleOfEnglandRose: "Sun Rose",
@@ -38,18 +40,21 @@ const TeaHybrideSunRoseDetalicPage = () => {
   }, []);
 
   return (
-    <>
+    <div className="CatalogOfRoses">
       <HeaderMenu />
       <BreadCrumb />
-      <div className="SectionColumnsGaps">
-        <section className="SectionCaruselBackground TopMarginSectionOfCatalogCarusel">
+      <div className="">
+        <section
+          style={{ margin: "15px 0px" }}
+          className="SectionCaruselBackground "
+        >
           <UniversalCarusel
             items={FifteenTeaHybrideRoseCarusel}
             type="teahybride"
             slidesToShow={2}
           />
         </section>
-        <section>
+        <section className="SectionOpisOfRoseSun">
           {OpisOfSunRose.map((item) => (
             <h1 className="titleOfOpis" key={item.titleOfSection}>
               {item.titleOfSection}
@@ -79,6 +84,9 @@ const TeaHybrideSunRoseDetalicPage = () => {
               </ul>
             ))}
           </ul>
+          <div className="readMore">
+            <ReadMore />
+          </div>
         </section>
         <section className="TabsSection">
           <Tabs />
@@ -90,17 +98,17 @@ const TeaHybrideSunRoseDetalicPage = () => {
           <UniversalCarusel
             items={CaruselHybridRoseSeedlings}
             TitleOfPopularRosesTypes={carouselTitlePopularyti[0].AlsoWatchTitle}
-            type="catalog"
+            type="catalogOfHomePage"
           />
         </section>
         {viewed.length > 0 && (
           <section
-            style={{ marginTop: "70px" }}
+            style={{ margin: "30px 0px " }}
             className="SectionCaruselBackground"
           >
             <UniversalCarusel
-              items={viewed}
-              type="viewed"
+              items={ThirdyBordersRoseCarusel}
+              type="thirdyBordersRoseCaruselViewed"
               TitleOfPopularRosesTypes="Переглянуті товари"
             />
           </section>
@@ -108,7 +116,7 @@ const TeaHybrideSunRoseDetalicPage = () => {
       </div>
       <Watched data={currentRose} />
       <Footer />
-    </>
+    </div>
   );
 };
 

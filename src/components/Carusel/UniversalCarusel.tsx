@@ -13,6 +13,13 @@ type RoseCatalogCarusel = {
   ratingOfCatalogRoses: string;
 };
 
+type ReviewsData = {
+  icon: string;
+  nameOfUser: string;
+  textOfReview: string;
+  rating: number;
+};
+
 type CreepingRoseCarusel = {
   titleOfСreepingRoseCarusel: string;
   imagesRoses: { img1: string; img2: string; img3: string };
@@ -45,7 +52,16 @@ type BordersRose = {
   IsAvailable: string;
   PriceOfBordersRoseCarusel: string;
   rating: number;
-  link: string; // Додано поле link
+  link: string;
+};
+
+type ThirdyBordersRoseCaruselViewed = {
+  titleOfBordersRoseCarusel: string;
+  imagesRoses: { img1: string; img2: string; img3: string };
+  // IsAvailable: string;
+  PriceOfBordersRoseCarusel: string;
+  // rating: number;
+  // link: string;
 };
 
 type UniversalCarouselProps = {
@@ -55,7 +71,9 @@ type UniversalCarouselProps = {
     | TeaHybride[]
     | BordersRose[]
     | ViewedRose[]
-    | CreepingRoseCarusel[];
+    | CreepingRoseCarusel[]
+    | ThirdyBordersRoseCaruselViewed[]
+    | ReviewsData[];
   type:
     | "catalogOfHomePage"
     | "catalog"
@@ -63,10 +81,13 @@ type UniversalCarouselProps = {
     | "teahybride"
     | "borders"
     | "viewed"
-    | "creeping";
+    | "creeping"
+    | "thirdyBordersRoseCaruselViewed"
+    | "reviews";
   slidesToShow?: number;
   style?: React.CSSProperties;
   TitleOfPopularRosesTypes?: string;
+  arrowType?: "light-green" | "dark-green";
 };
 
 const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
@@ -75,6 +96,7 @@ const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
   slidesToShow = 2,
   style,
   TitleOfPopularRosesTypes,
+  arrowType = "light-green", // значення за замовчуванням
 }) => {
   const sliderRef = useRef<any>(null);
   const settings = {
@@ -86,19 +108,63 @@ const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
     arrows: false,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1200, // десктоп і менше
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: slidesToShow,
+          slidesToScroll: slidesToShow,
         },
       },
     ],
   };
+
+  // Функція для рендеру потрібних кнопок
+  const renderArrows = () => {
+    if (arrowType === "light-green") {
+      return (
+        <>
+          <button
+            className="custom-arrow custom-arrow-left"
+            onClick={() => sliderRef.current?.slickPrev()}
+          >
+            <span className="custom-arrow-icon-light-green custom-arrow-icon-left-light-green" />
+          </button>
+          <button
+            className="custom-arrow custom-arrow-right"
+            onClick={() => sliderRef.current?.slickNext()}
+          >
+            <span className="custom-arrow-icon-light-green custom-arrow-icon-right-light-green" />
+          </button>
+        </>
+      );
+    }
+    if (arrowType === "dark-green") {
+      return (
+        <>
+          <button
+            className="custom-arrow custom-arrow-left"
+            onClick={() => sliderRef.current?.slickPrev()}
+          >
+            <span className="custom-arrow-icon-dark-green custom-arrow-icon-left-dark-green" />
+          </button>
+          <button
+            className="custom-arrow custom-arrow-right"
+            onClick={() => sliderRef.current?.slickNext()}
+          >
+            <span className="custom-arrow-icon-dark-green custom-arrow-icon-right-dark-green" />
+          </button>
+        </>
+      );
+    }
+    return null;
+  };
+
   return (
     <div
       className="ContainerCaruselWidth"
       style={{
         ...style,
+        background: type === "reviews" ? "transparent" : undefined,
+        // width: type === "reviews" ? "50%" : "60%",
       }}
     >
       {TitleOfPopularRosesTypes && (
@@ -107,7 +173,7 @@ const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
       <Slider ref={sliderRef} {...settings}>
         {type === "catalogOfHomePage" &&
           (items as RoseCatalogCarusel[]).map((item, idx) => (
-            <div className="SlideContainer" key={idx}>
+            <div className="SlideContainerСatalogOfHomePage" key={idx}>
               <div
                 className="WidthOfcontainerSlides"
                 style={{
@@ -123,7 +189,7 @@ const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
                   readOnly
                 />
               </div>
-              <h1 className="TitleOfCaruselCatalog">
+              <h1 className="TitleOfCaruselСatalogOfHomePage">
                 {item.TitleOfHybridRose}
               </h1>
 
@@ -152,7 +218,7 @@ const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
           ))}
         {type === "catalog" &&
           (items as RoseCatalogCarusel[]).map((item, idx) => (
-            <div className="SlideContainer" key={idx}>
+            <div className="SlideContainerCatalog" key={idx}>
               <div
                 className="WidthOfcontainerSlides"
                 style={{
@@ -380,24 +446,28 @@ const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
               </div>
             </div>
           ))}
-        {type === "viewed" &&
-          (items as ViewedRose[]).map((item, idx) => (
-            <div className="SlideContainer" key={item.id || idx}>
+        {type === "thirdyBordersRoseCaruselViewed" &&
+          (items as ThirdyBordersRoseCaruselViewed[]).map((item) => (
+            <div
+              style={{ border: "2px solid #b8ccae" }}
+              className="SlideContainerСatalogOfHomePage"
+            >
               <div
                 className="WidthOfcontainerSlides"
                 style={{
-                  backgroundImage: `url(${item.image})`,
+                  backgroundImage: `url(${item.imagesRoses.img1})`, // ← виправлено
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   overflow: "hidden",
                 }}
               ></div>
-              <div className="ratingCenter">
-                <Rating value={Number(item.rating) || 0} readOnly />
-              </div>
-              <h1 className="TitleOfCaruselCatalog">{item.title}</h1>
-              <div className="ContainerButtonOfCatalogDisplayAndGap">
-                <h3 className="PriceOfCaruselCatalog">{item.price}</h3>
+              <h1 className="TitleOfCaruselGreenRosesEngland">
+                {item.titleOfBordersRoseCarusel}
+              </h1>{" "}
+              <h3 className="PriceOfCaruselGreenRosesEngland">
+                {item.PriceOfBordersRoseCarusel}
+              </h3>
+              {/* <div className="ContainerButtonOfCatalogDisplayAndGap">
                 <Counter />
                 <button
                   className="BuyButton"
@@ -405,37 +475,45 @@ const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
                   type="submit"
                 >
                   <img
-                    src="/public/ЕлементиАнглійськіТроянди/24.png"
+                    src="/ЕлементиАнглійськіТроянди/24.png"
                     height={"30px"}
                     alt="BuyCart"
                   />{" "}
                   Купити
                 </button>
+              </div> */}
+            </div>
+          ))}
+        {type === "reviews" &&
+          (items as ReviewsData[]).map((items, idx) => (
+            <div key={idx} className="ReviewsContainer">
+              <div className="reviewCard">
+                <div className="iconContainer">
+                  <img
+                    className="ImgOfIconReviews"
+                    src={items.icon}
+                    alt={items.nameOfUser}
+                  />
+                </div>
+                <div className="RatingContainer">
+                  <Rating value={Number(items.rating) || 0} readOnly />
+                </div>
+                <div className="textOfReviewsContainer">
+                  <p>{items.textOfReview}</p>
+                </div>
+                <div className="nameOfUserContainer">
+                  <h1 className="nameOfUserH1">{items.nameOfUser}</h1>
+                </div>
               </div>
-              <div style={{ marginTop: 10 }}>
-                <Link to={item.link} style={{ textDecoration: "none" }}>
-                  <button className="DetalicButton" type="button">
-                    Детальніше
-                  </button>
-                </Link>
+              <div className="moreReviewsBtnWrapper">
+                <button className="moreReviewsBtn">
+                  ЧИТАТИ БІЛЬШЕ ВІДГУКІВ
+                </button>
               </div>
             </div>
           ))}
       </Slider>
-      {/* Кастомні кнопки */}
-      <button
-        className="custom-arrow custom-arrow-left"
-        onClick={() => sliderRef.current?.slickPrev()}
-      >
-        <img src="/public/ЕлементиОписТроянди/36к.png" height={"50px"} alt="" />
-      </button>
-      <button
-        className="custom-arrow custom-arrow-right"
-        onClick={() => sliderRef.current?.slickNext()}
-      >
-        {" "}
-        <img src="/public/ЕлементиОписТроянди/36.png" height={"50px"} alt="" />
-      </button>
+      {renderArrows()}
     </div>
   );
 };

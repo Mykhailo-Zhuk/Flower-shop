@@ -2,8 +2,7 @@ import { Link as RouterLink, useLocation } from "react-router-dom";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
-import HomeIcon from "@mui/icons-material/Home";
-
+import "../../styles/BreadCrumb.css";
 const PATH_NAMES: Record<string, string> = {
   "/catalog-of-roses": "Каталог троянд",
   "/catalog-of-roses/catalog-england-rose": "Англійські троянди",
@@ -26,21 +25,32 @@ export default function BreadCrumb() {
       color="inherit"
       style={{ display: "flex", alignItems: "center" }}
     >
-      <HomeIcon style={{ color: "#569464", fontSize: 25, verticalAlign: "middle" }} />
+      {/* <HomeIcon
+        style={{ border: "DarkGreen", fontSize: 25, verticalAlign: "middle" }}
+      /> */}
+      <span style={{ verticalAlign: "middle" }}>
+        <img
+          height={"25px"}
+          src={"/public/ЕлементиАнглійськіТроянди/10.png"}
+          alt=""
+        />
+      </span>
     </Link>,
     ...pathnames.map((value, idx) => {
       const to = "/" + pathnames.slice(0, idx + 1).join("/");
       const label = PATH_NAMES[to] || decodeURIComponent(value);
       const isLast = idx === pathnames.length - 1;
       return isLast ? (
-        <Typography key={to} color="text.primary">{label}</Typography>
+        <Typography key={to} color="inherit">
+          {label}
+        </Typography>
       ) : (
         <Link
           key={to}
           component={RouterLink}
           to={to}
           underline="hover"
-          color="inherit"
+          color="green"
         >
           {label}
         </Link>

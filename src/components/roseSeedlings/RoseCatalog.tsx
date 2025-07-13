@@ -1,9 +1,10 @@
 import type React from "react";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, Outlet } from "react-router-dom";
 import Link from "@mui/material/Link";
 import {
   CatalogOfPopularRosesTypes,
-  TextForCatalogPage,
+  // TextForCatalogPage,
+  ThirdyBordersRoseCarusel, // ← правильна назва
   CareAndSecretsOfGrowingRoses,
   CaruselHybridRoseSeedlings,
   carouselTitlePopularyti,
@@ -22,7 +23,6 @@ import type { CatalogHybridRoseSeedlingsType } from "../../Data/mainMenuData";
 const RoseCatalog: React.FC = () => {
   const [viewed, setViewed] = useState<ViewedRose[]>([]);
 
-  // Оновлювати при кожному відкритті сторінки
   useEffect(() => {
     const updateViewed = () => {
       const roses = getViewedRoses();
@@ -39,7 +39,7 @@ const RoseCatalog: React.FC = () => {
     CatalogOfPopularRosesTypes;
 
   return (
-    <>
+    <div className="CatalogOfRoses">
       <HeaderMenu />
       <BreadCrumb />
       <section className="Section1Rose">
@@ -48,12 +48,17 @@ const RoseCatalog: React.FC = () => {
           <SortByInput />
           <div className="ColumnOfCatalogPopularRoses">
             {catalogPopularRoses.map((rose, idx) => (
-              <div key={idx} className="">
-                <img
-                  src={rose.imgTypeOfRose}
-                  className="CatalogPopularImages"
-                  alt={rose.TitleTypeOfRose}
-                />
+              <div
+                key={idx}
+                style={{
+                  backgroundImage: `url(${rose.imgTypeOfRose})`,
+                  backgroundRepeat: "no-repeat",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "flex-end",
+                }}
+                className="catalog-itemrose"
+              >
                 <Link
                   className="LinksStyles"
                   component={RouterLink}
@@ -76,86 +81,109 @@ const RoseCatalog: React.FC = () => {
         <UniversalCarusel
           items={CaruselHybridRoseSeedlings}
           TitleOfPopularRosesTypes={carouselTitlePopularyti[0].AlsoWatchTitle}
-          type="catalog"
+          type="catalogOfHomePage"
         />
-      </section>
-      <section className="Section2Rose">
-        {TextForCatalogPage.map((item, idx) => (
-          <div key={idx}>
-            {item.TitleOfPrefaceOfCatalogBlack && (
-              <h1 className="TitleOfPrefaceBlackBold">
-                {item.TitleOfPrefaceOfCatalogBlack}
-              </h1>
-            )}
-            {item.prefaceOfCatalogOfRoses && (
-              <h1 className="AboutCompaniOfPrefaceBlackBold">
-                {item.prefaceOfCatalogOfRoses}
-              </h1>
-            )}
-            <div className="containerOfCareInstruction">
-              {item.GreenTitleOfCatalogOfRoses && (
-                <h1 className="TitleToLeft">
-                  {item.GreenTitleOfCatalogOfRoses}
-                </h1>
-              )}
-              {item.TextOfCatalogOfRoses && (
-                <h3 className="textLiOfCare">{item.TextOfCatalogOfRoses}</h3>
-              )}
-            </div>
-            {item.UpdateCatalogpreface && (
-              <h3 className="TitleOfPrefaceBlackBold">
-                {item.UpdateCatalogpreface}
-              </h3>
-            )}
-            {item.linkGreenOfCatalogRoses && (
-              <h3 className="LinkToBuy">{item.linkGreenOfCatalogRoses}</h3>
-            )}
-          </div>
-        ))}
-      </section>
-      <section className="Section3Rose">
-        {CareAndSecretsOfGrowingRoses.map((liItem, idx) => (
-          <div key={idx} className="">
-            <h2 className="TitleOfPrefaceBlackBold">
-              {liItem.TitleOfSecretsOfGrowingRoses}
-            </h2>
-            <p className="TitleOfPrefaceBlackBold">
-              {liItem.prefaceCareAndSecretsOfGrowingRoses}
-            </p>
-
-            <div className="HowToCareIconAndTextContainer">
-              <img src={liItem.ImagesTypeOfCare} height={"60%"} alt="" />
-              <p className="HowToCareIconAndText">{liItem.TypesOfCares}</p>
-            </div>
-            <div>
-              {liItem.ulOfCareOfRoses &&
-              typeof liItem.ulOfCareOfRoses === "object" ? (
-                <ul className="ULLiOfCare">
-                  {Object.values(liItem.ulOfCareOfRoses).map((val, i) => (
-                    <li key={i}>{val}</li>
-                  ))}
-                </ul>
-              ) : (
-                <div>{liItem.ulOfCareOfRoses}</div>
-              )}
-            </div>
-          </div>
-        ))}
       </section>
       {viewed.length > 0 && (
         <section
-          style={{ marginTop: "70px" }}
+          style={{ margin: "30px 0px " }}
           className="SectionCaruselBackground"
         >
           <UniversalCarusel
-            items={viewed}
-            type="viewed"
+            items={ThirdyBordersRoseCarusel}
+            type="thirdyBordersRoseCaruselViewed"
             TitleOfPopularRosesTypes="Переглянуті товари"
           />
         </section>
       )}
+      <div style={{ backgroundColor: "white" }} className="SectionColumnsGaps ">
+        <section className="rose-intro ">
+          <h1 className="rose-title">
+            Купити саджанці троянд <br />в «Alyona’s Garden»
+          </h1>
+
+          <p className="rose-paragraph-after-title">
+            Якщо ви шукаєте якісні саджанці троянд,{" "}
+            <strong>«Alyona’s Garden»</strong> — ідеальне місце для вашого
+            вибору! Тут представлений широкий асортимент сортів:
+            <span className="highlighted-list">
+              {" "}
+              чайно-гібридні, плетисті, бордюрні та англійські троянди.
+            </span>
+          </p>
+
+          <div className="rose-highlight-block">
+            <h2 className="rose-highlight-title">Якість та надійність</h2>
+            <p className="rose-paragraph">
+              У <strong>«Alyona’s Garden»</strong> ви отримаєте{" "}
+              <strong>здорові та міцні саджанці</strong>, вирощені у професійних
+              умовах. Кожна рослина проходить ретельний контроль перед
+              відправкою, що гарантує її швидке укорінення у вашому саду.
+            </p>
+          </div>
+          <div className="rose-highlight-block">
+            <h2 className="rose-highlight-title">Зручна доставка по Україні</h2>
+            <p className="rose-paragraph">
+              Замовлення оформлюється легко, а доставка здійснюється в
+              найкоротші терміни. Ви отримуєте <strong> свіжі саджанці,</strong>{" "}
+              готові до посадки, без стресу та зайвих турбот.
+            </p>
+          </div>
+          <div className="rose-highlight-block">
+            <h2 className="rose-highlight-title">
+              Консультації та допомога у виборі
+            </h2>
+            <p className="rose-paragraph">
+              Якщо вам потрібна порада щодо вибору сорту або догляду за
+              трояндами, команда <strong> «Alyona’s Garden» </strong> завжди
+              готова допомогти!
+            </p>
+          </div>
+          <div className="rose-highlight-block">
+            <p className="rose-paragraph-update">
+              Оновіть свій сад разом із <strong> «Alyona’s Garden» </strong>–
+              вибирайте троянди, які радуватимуть вас роками!
+            </p>
+            <h2 className="rose-link-title">
+              Зробіть замовлення вже сьогодні!
+            </h2>
+          </div>
+        </section>
+        <section className="Section3Rose">
+          {CareAndSecretsOfGrowingRoses.map((liItem, idx) => (
+            <div key={idx} className="">
+              <div className="TitleOfPrefaceBlackContainer">
+                <h2 className="TitleOfPrefaceBlackBold">
+                  {liItem.TitleOfSecretsOfGrowingRoses}
+                </h2>
+                <p className="TitleOfPrefaceBlack">
+                  {liItem.prefaceCareAndSecretsOfGrowingRoses}
+                </p>
+              </div>
+              <div className="HowToCareIconAndTextContainer">
+                <img src={liItem.ImagesTypeOfCare} height={"60%"} alt="" />
+                <p className="HowToCareIconAndText">{liItem.TypesOfCares}</p>
+              </div>
+              <div className="ULOfCareOfRosesContainer">
+                {liItem.ulOfCareOfRoses &&
+                typeof liItem.ulOfCareOfRoses === "object" ? (
+                  <ul className="ULLiOfCare">
+                    {Object.values(liItem.ulOfCareOfRoses).map((val, i) => (
+                      <li key={i}>{val}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <div>{liItem.ulOfCareOfRoses}</div>
+                )}
+              </div>
+            </div>
+          ))}
+        </section>
+      </div>
+
       <Footer />
-    </>
+      <Outlet />
+    </div>
   );
 };
 

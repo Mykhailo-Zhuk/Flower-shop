@@ -10,7 +10,7 @@
 }
 
 .CatalogPopularTitle {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
   background-color: white;
@@ -19,14 +19,18 @@
   text-transform: uppercase;
 }
 
-.ContainerOfCatalogPopularRoses {
-  padding: 20px;
+.CatalogOfRoses {
   background-color: #b8ccae;
 }
 
-img.CatalogPopularImages {
-  width: 100%;
-  height: 250px;
+.catalog-itemrose {
+  width: 180px;
+  height: 220px;
+}
+
+.ContainerOfCatalogPopularRoses {
+  padding: 20px;
+  background-color: #b8ccae;
 }
 
 .LinkToBuy {
@@ -44,7 +48,7 @@ img.CatalogPopularImages {
 }
 
 .HowToCareIconAndText {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 500;
   margin: 15px 0px;
 }
@@ -57,18 +61,105 @@ img.CatalogPopularImages {
   justify-content: center;
 }
 
+.rose-intro {
+  display: flex;
+  flex-direction: column;
+  columns: 1;
+  gap: 20px;
+  color: #222;
+  justify-content: center;
+}
+
+.rose-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rose-link-title {
+  text-align: center;
+  font-size: 15px;
+  color: #4d7c5b;
+  font-style: italic;
+}
+
+.rose-paragraph-after-title {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.rose-paragraph {
+  font-size: 18px;
+  line-height: 1.6;
+  width: 60%;
+}
+
+.rose-paragraph-update {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rose-paragraph strong {
+  font-weight: 700;
+}
+
+.highlighted-list {
+  font-weight: 600;
+  color: #000;
+}
+
+.rose-highlight-block {
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.rose-highlight-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: #4d7c5b;
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
 .TitleOfSection1 {
   text-align: center;
   font-weight: bold;
   color: #245e2c;
   margin: 15px;
   text-transform: uppercase;
+  font-size: 30px;
+}
+
+.TitleOfPrefaceBlackContainer {
+  display: flex;
+  flex-direction: column;
+  columns: 1;
+  gap: 15px;
 }
 
 .TitleOfPrefaceBlackBold {
   color: black;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.TitleOfPrefaceBlack {
+  color: black;
+  font-weight: 400;
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .TitleToLeft {
@@ -90,9 +181,8 @@ img.CatalogPopularImages {
   list-style: none;
   padding-left: 1.2em;
   margin: 5px;
-  font-weight: 350;
-  font-size: 29px;
-  width: 80%;
+  font-size: 20px;
+  width: 40%;
 }
 
 .ULLiOfCare li {
@@ -117,23 +207,190 @@ img.CatalogPopularImages {
 
 @media screen and (max-width: 950px) and (min-width: 200px) {
   .CatalogPopularTitle {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
-
     background-color: white;
     color: #245e2c;
     padding: 5px;
     text-transform: uppercase;
   }
 
-  img.CatalogPopularImages {
-    width: 100%;
-    height: auto;
+  .catalog-itemrose {
+    width: 180px;
+    height: 200px;
   }
 
   .ColumnOfCatalogPopularRoses {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+  }
+
+  .rose-intro {
+    display: flex;
+    flex-direction: column;
+    columns: 1;
+    gap: 20px;
+    color: #222;
+    padding: 0;
+    margin: 0;
+  }
+
+  .rose-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .rose-link-title {
+    text-align: center;
+    font-size: 15px;
+    color: #4d7c5b;
+    font-style: italic;
+  }
+
+  .rose-paragraph-after-title {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    width: 90%;
+    padding: 10px;
+
+    margin: 0 auto;
+  }
+
+  .rose-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    width: 90%;
+    padding: 0px 15px;
+  }
+
+  .rose-paragraph-update {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .rose-paragraph strong {
+    font-weight: 700;
+  }
+
+  .highlighted-list {
+    font-weight: 600;
+    color: #000;
+  }
+
+  .rose-highlight-block {
+    padding: 5px;
+    border-radius: 6px;
+  }
+
+  .rose-highlight-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: #4d7c5b;
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .TitleOfSection1 {
+    text-align: left;
+    font-weight: bold;
+    color: #245e2c;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .HowToCareIconAndTextContainer {
+    display: flex;
+    justify-content: left;
+    place-items: center;
+    gap: 10px;
+    margin: 0px 5px;
+  }
+
+  .TitleOfPrefaceBlackContainer {
+    display: flex;
+    flex-direction: column;
+    columns: 1;
+    gap: 15px;
+  }
+
+  .TitleOfPrefaceBlackBold {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .TitleOfPrefaceBlack {
+    color: black;
+    font-weight: 400;
+    text-align: left;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .TitleToLeft {
+    background-color: #245e2c;
+    color: #fff;
+    width: fit-content;
+    padding: 7px;
+    margin: 5px;
+  }
+
+  .textLiOfCare {
+    margin: 5px;
+    font-weight: 350;
+    width: 80%;
+    list-style-type: none;
+  }
+
+  .ULLiOfCare {
+    list-style: none;
+    padding-left: 1.2em;
+    margin: 5px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .ULLiOfCare li {
+    position: relative;
+    color: black;
+    margin-bottom: 0.5em;
+    padding-left: 1.2em;
+  }
+
+  .ULLiOfCare li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0.7em;
+    height: 0.7em;
+    background: #245e2c; /* зелений */
+    border-radius: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
   }
 }
