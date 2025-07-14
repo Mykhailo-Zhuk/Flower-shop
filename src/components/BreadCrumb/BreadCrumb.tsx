@@ -4,12 +4,13 @@ import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import "../../styles/BreadCrumb.css";
 const PATH_NAMES: Record<string, string> = {
-  "/catalog-of-roses": "Каталог троянд",
-  "/catalog-of-roses/catalog-england-rose": "Англійські троянди",
-  "/catalog-of-roses/catalog-tea-hybride-rose": "Чайно-гібридні троянди",
-  "/catalog-of-roses/catalog-borders-rose": "Бордюрні троянди",
-  "/catalog-of-roses/catalog-climbing-rose": "Плетисті троянди",
-  "/catalog-of-roses/catalog-tea-hybride-sun-rose": "Троянди Сонячна",
+  "/catalog": "Саджанці",
+  "/catalog/roses": "Саджанці Троянд",
+  "/catalog/roses/england": "Англійські троянди",
+  "/catalog/roses/tea": "Чайно-гібридні троянди",
+  "/catalog/roses/borders": "Бордюрні троянди",
+  "/catalog/roses/creeping": "Плетисті троянди",
+  "/catalog/roses/tea/sunnyrose": "Троянда Сонячна",
 };
 
 export default function BreadCrumb() {
