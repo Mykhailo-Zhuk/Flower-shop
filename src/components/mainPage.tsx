@@ -61,34 +61,40 @@ const MainPage: React.FC = () => {
         <div className="titleOfCatalog">
           <h2 className="headerOfCarulesTitle">ТОП продажів</h2>
         </div>
-        <UniversalCarusel
-          slidesToShow={2}
-          items={CaruselHybridRoseSeedlings}
-          type="catalogOfHomePage"
-          arrowType="dark-green"
-        />
+        <div className="MarginSectionOfCarusel">
+          <UniversalCarusel
+            slidesToShow={2}
+            items={CaruselHybridRoseSeedlings}
+            type="catalogOfHomePage"
+            arrowType="dark-green"
+          />
+        </div>
       </section>
       <section className="Section6">
         <div className="titleOfCatalog">
           <h2 className="headerOfCarulesTitle">Популярні товари</h2>
         </div>
-        <UniversalCarusel
-          slidesToShow={2}
-          items={CaruselHybridRoseSeedlings}
-          type="catalogOfHomePage"
-          arrowType="dark-green"
-        />
+        <div className="MarginSectionOfCarusel">
+          <UniversalCarusel
+            slidesToShow={2}
+            items={CaruselHybridRoseSeedlings}
+            type="catalogOfHomePage"
+            arrowType="dark-green"
+          />
+        </div>
       </section>
       <section className="Section7">
         <div className="titleOfCatalog">
           <h2 className="headerOfCarulesTitle">Акційні товари</h2>
         </div>
-        <UniversalCarusel
-          slidesToShow={2}
-          items={CaruselHybridRoseSeedlings}
-          type="catalogOfHomePage"
-          arrowType="dark-green"
-        />
+        <div className="MarginSectionOfCarusel">
+          <UniversalCarusel
+            slidesToShow={2}
+            items={CaruselHybridRoseSeedlings}
+            type="catalogOfHomePage"
+            arrowType="dark-green"
+          />
+        </div>
       </section>
 
       <section className="Section8">
@@ -126,12 +132,14 @@ const MainPage: React.FC = () => {
         <div className="">
           <h2 className="headerOfTitlePerevagy">Відгуки про нас</h2>
         </div>
-        <UniversalCarusel
-          slidesToShow={1}
-          items={ReviewsDataMainPage}
-          type="reviews"
-          arrowType="dark-green"
-        />
+        <div className="MarginSectionOfCarusel">
+          <UniversalCarusel
+            slidesToShow={1}
+            items={ReviewsDataMainPage}
+            type="reviews"
+            arrowType="dark-green"
+          />
+        </div>
       </section>
       <section className="Section9">
         <div className="text-block">

@@ -4,11 +4,15 @@
   place-items: center;
   margin: 0 auto;
   width: fit-content;
+  padding: 3px;
+  border-radius: 10px;
   gap: 5px;
+  background: rgb(220, 220, 220);
 }
 
 button.ButtonCounter {
-  background: rgb(203, 203, 203);
   height: fit-content;
   border: none;
+  background: transparent;
+  font-size: 28px;
 }

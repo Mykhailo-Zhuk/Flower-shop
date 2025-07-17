@@ -61,6 +61,11 @@
   justify-content: center;
 }
 
+.MarginSectionOfCaruselRoseCatalog {
+  padding: 10px 19px;
+  margin: 0 auto;
+}
+
 .rose-intro {
   display: flex;
   flex-direction: column;

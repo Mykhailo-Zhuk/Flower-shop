@@ -12,7 +12,7 @@ const Counter = () => {
       >
         -
       </button>
-      <h2>{Count}</h2>
+      <h2 style={{ fontSize: "28px" }}>{Count}</h2>
       <button
         className="ButtonCounter"
         onClick={() => setCount((prev) => prev + 1)}

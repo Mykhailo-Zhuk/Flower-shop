@@ -138,6 +138,10 @@ p {
   padding: 0;
 }
 
+.MarginSectionOfCarusel {
+  padding: 10px;
+}
+
 .imageOfMainSubject {
   width: 100vh;
   height: auto;

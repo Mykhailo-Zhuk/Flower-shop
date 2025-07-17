@@ -71,29 +71,38 @@ const RoseCard: React.FC<Props> = ({ rose }) => {
       </ul>
 
       <h2 className="mt-6 text-lg font-semibold text-yellow-600">Догляд</h2>
-      <ul className="text-sm no-li text-gray-700 list-disc pl-5 space-y-1">
-        <li style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <img src="/public/ЕлементиОписТроянди/24.png" alt="" />{" "}
-          <strong>Посадка:</strong> {rose.care.planting}
-        </li>
-        <li style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <img src="/public/ЕлементиОписТроянди/25.png" alt="" />{" "}
-          <strong>Полив:</strong> {rose.care.watering}
-        </li>
-        <li style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <img src="/public/ЕлементиОписТроянди/26.png" alt="" />{" "}
-          <strong>Обрізка:</strong> {rose.care.pruning}
-        </li>
-        <li style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <img src="/public/ЕлементиОписТроянди/27.png" alt="" />{" "}
-          <strong>Підживлення:</strong> {rose.care.fertilizing}
-        </li>
-        <li style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <img src="/public/ЕлементиОписТроянди/28.png" alt="" />{" "}
-          <strong>Підготовка до зими:</strong> {rose.care.winterCare}
-        </li>
-      </ul>
-
+      <div className="care-block">
+        <div className="care-item">
+          <img src="/ЕлементиОписТроянди/24.png" alt="Посадка" />
+          <p>
+            <strong>Посадка:</strong> {rose.care.planting}
+          </p>
+        </div>
+        <div className="care-item">
+          <img src="/ЕлементиОписТроянди/25.png" alt="Полив" />
+          <p>
+            <strong>Полив:</strong> {rose.care.watering}
+          </p>
+        </div>
+        <div className="care-item">
+          <img src="/ЕлементиОписТроянди/26.png" alt="Обрізка" />
+          <p>
+            <strong>Обрізка:</strong> {rose.care.pruning}
+          </p>
+        </div>
+        <div className="care-item">
+          <img src="/ЕлементиОписТроянди/27.png" alt="Підживлення" />
+          <p>
+            <strong>Підживлення:</strong> {rose.care.fertilizing}
+          </p>
+        </div>
+        <div className="care-item">
+          <img src="/ЕлементиОписТроянди/28.png" alt="Підготовка до зими" />
+          <p>
+            <strong>Підготовка до зими:</strong> {rose.care.winterCare}
+          </p>
+        </div>
+      </div>
       <a
         href={rose.storeLink}
         target="_blank"

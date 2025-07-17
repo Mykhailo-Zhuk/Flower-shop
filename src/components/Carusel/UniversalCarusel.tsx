@@ -77,6 +77,7 @@ type UniversalCarouselProps = {
   type:
     | "catalogOfHomePage"
     | "catalog"
+    | "catalogOfViewed"
     | "england"
     | "teahybride"
     | "borders"
@@ -108,9 +109,9 @@ const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
     arrows: false,
     responsive: [
       {
-        breakpoint: 1200, // десктоп і менше
+        breakpoint: 1200,
         settings: {
-          slidesToShow: slidesToShow,
+          slidesToShow,
           slidesToScroll: slidesToShow,
         },
       },
@@ -216,6 +217,7 @@ const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
               </div>
             </div>
           ))}
+
         {type === "catalog" &&
           (items as RoseCatalogCarusel[]).map((item, idx) => (
             <div className="SlideContainerCatalog" key={idx}>
@@ -446,6 +448,29 @@ const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
               </div>
             </div>
           ))}
+        {type === "catalogOfViewed" &&
+          (items as RoseCatalogCarusel[]).map((item) => (
+            <div
+              style={{ border: "2px solid #b8ccae" }}
+              className="SlideContainerСatalogOfHomePage"
+            >
+              <div
+                className="WidthOfcontainerSlides"
+                style={{
+                  backgroundImage: `url(${item.imgHybridRose})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  overflow: "hidden",
+                }}
+              ></div>
+              <h1 className="TitleOfCaruselGreenRosesEnglandViewed">
+                {item.TitleOfHybridRose}
+              </h1>{" "}
+              <h3 className="PriceOfCaruselGreenRosesEnglandViewed">
+                {item.priceHybridRose}
+              </h3>
+            </div>
+          ))}
         {type === "thirdyBordersRoseCaruselViewed" &&
           (items as ThirdyBordersRoseCaruselViewed[]).map((item) => (
             <div
@@ -461,10 +486,10 @@ const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
                   overflow: "hidden",
                 }}
               ></div>
-              <h1 className="TitleOfCaruselGreenRosesEngland">
+              <h1 className="TitleOfCaruselGreenRosesEnglandViewed">
                 {item.titleOfBordersRoseCarusel}
               </h1>{" "}
-              <h3 className="PriceOfCaruselGreenRosesEngland">
+              <h3 className="PriceOfCaruselGreenRosesEnglandViewed">
                 {item.PriceOfBordersRoseCarusel}
               </h3>
               {/* <div className="ContainerButtonOfCatalogDisplayAndGap">

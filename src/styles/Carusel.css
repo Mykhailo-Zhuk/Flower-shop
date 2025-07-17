@@ -81,6 +81,15 @@
   background-color: #fff;
 }
 
+.ContainerCaruselWidth .slick-slide {
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.ContainerCaruselWidth .slick-list {
+  margin: 0 -25px;
+}
+
 .CatalogOfRoses {
   background-color: #b8ccae;
 }
@@ -168,7 +177,8 @@ h2 {
   font-weight: 500;
 }
 
-.PriceOfCaruselGreenRosesEngland {
+.PriceOfCaruselGreenRosesEngland,
+.PriceOfCaruselGreenRosesEnglandViewed {
   font-size: 25px;
   color: #569464;
   text-align: center;
@@ -254,7 +264,8 @@ h1.nameOfUserH1 {
   margin-top: 50px;
 }
 
-.TitleOfCaruselGreenRosesEngland {
+.TitleOfCaruselGreenRosesEngland,
+.TitleOfCaruselGreenRosesEnglandViewed {
   text-align: center;
   font-size: 20px;
   margin: 0 auto;
@@ -333,6 +344,15 @@ h1.nameOfUserH1 {
     cursor: pointer;
   }
 
+  .ContainerCaruselWidth .slick-slide {
+    padding: 0 14px;
+    box-sizing: border-box;
+  }
+
+  .ContainerCaruselWidth .slick-list {
+    margin: 0 -14px;
+  }
+
   .ImgOfIconReviews {
     height: 50px;
   }
@@ -377,6 +397,13 @@ h1.nameOfUserH1 {
     text-align: center;
   }
 
+  .PriceOfCaruselGreenRosesEnglandViewed {
+    font-size: 16px;
+    color: #569464;
+    text-align: center;
+    margin: 4px;
+  }
+
   .moreReviewsBtnWrapper {
     margin-top: 20px;
     /* margin-right: 35px; */
@@ -406,9 +433,9 @@ h1.nameOfUserH1 {
   .TitleOfCaruselСatalogOfHomePage {
     text-align: center;
     color: black;
-    width: 93%;
+    width: 95%;
     margin: 0 auto;
-    font-size: 15px;
+    font-size: 10px;
     font-family: "Montserrat", sans-serif;
     display: block;
   }
@@ -421,9 +448,17 @@ h1.nameOfUserH1 {
     width: 180px;
   }
 
+  .TitleOfCaruselGreenRosesEnglandViewed {
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto;
+    color: #569464;
+    width: 150px;
+  }
+
   .WidthOfcontainerSlides {
-    width: 90%;
-    height: 190px;
+    width: 80%;
+    height: 140px;
     position: relative;
     margin: 0 auto;
   }

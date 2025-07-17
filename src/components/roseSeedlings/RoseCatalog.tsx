@@ -78,22 +78,26 @@ const RoseCatalog: React.FC = () => {
         style={{ marginTop: "70px" }}
         className="SectionCaruselBackground"
       >
-        <UniversalCarusel
-          items={CaruselHybridRoseSeedlings}
-          TitleOfPopularRosesTypes={carouselTitlePopularyti[0].AlsoWatchTitle}
-          type="catalogOfHomePage"
-        />
+        <div className="MarginSectionOfCaruselRoseCatalog">
+          <UniversalCarusel
+            items={CaruselHybridRoseSeedlings}
+            TitleOfPopularRosesTypes={carouselTitlePopularyti[0].AlsoWatchTitle}
+            type="catalogOfViewed"
+          />
+        </div>
       </section>
       {viewed.length > 0 && (
         <section
           style={{ margin: "30px 0px " }}
           className="SectionCaruselBackground"
         >
-          <UniversalCarusel
-            items={ThirdyBordersRoseCarusel}
-            type="thirdyBordersRoseCaruselViewed"
-            TitleOfPopularRosesTypes="Переглянуті товари"
-          />
+          <div className="MarginSectionOfCaruselRoseCatalog">
+            <UniversalCarusel
+              items={ThirdyBordersRoseCarusel}
+              type="thirdyBordersRoseCaruselViewed"
+              TitleOfPopularRosesTypes="Переглянуті товари"
+            />
+          </div>
         </section>
       )}
       <div style={{ backgroundColor: "white" }} className="SectionColumnsGaps ">

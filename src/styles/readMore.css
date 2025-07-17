@@ -13,11 +13,25 @@
   justify-content: center;
 }
 
-.no-li {
-  list-style: none;
+.care-block {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.care-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+.care-item img {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
 }
 
 .li-green- {
@@ -138,16 +152,33 @@
     margin: 0 0 0 10px;
   }
 
-  /* .SectionColumnsGaps {
-  display: flex;
-  flex-direction: column;
-  columns: 1;
-  gap: 35px;
-} */
-
   .ListOfOpisRoseSun {
     margin: 0;
     padding: 0;
+    font-size: 15px;
+  }
+
+  .li-green- {
+    list-style: none;
+    padding-left: 1.2em;
+    margin: 5px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .li-green- li {
+    position: relative;
+    color: black;
+    margin-bottom: 0.5em;
+    padding-left: 0em;
+  }
+
+  .care-item img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .care-item p {
     font-size: 15px;
   }
 

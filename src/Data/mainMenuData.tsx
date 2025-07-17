@@ -80,62 +80,77 @@ const CatalogDataMainPage = [
   {
     titleOfCatalog: "Саджанці троянд",
     backgroundImages: "/public/ГоловнаСторінка/13.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Саджанці декоративних рослин",
     backgroundImages: "/public/ГоловнаСторінка/14.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Саджанці полуниці",
     backgroundImages: "/public/ГоловнаСторінка/15.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Саджанці плодових дерев",
     backgroundImages: "/public/ГоловнаСторінка/16.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Саджанці ягідних чагарників",
     backgroundImages: "/public/ГоловнаСторінка/17.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Саджанці екзотичних рослин",
     backgroundImages: "/public/ГоловнаСторінка/18.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Саджанці цитрусових рослин",
     backgroundImages: "/public/ГоловнаСторінка/19.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Саджанці винограду",
     backgroundImages: "/public/ГоловнаСторінка/20.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Саджанці хвойних рослин",
     backgroundImages: "/public/ГоловнаСторінка/21.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Саджанці багаторічних рослин",
     backgroundImages: "/public/ГоловнаСторінка/22.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Саджанці декоративних дерев",
     backgroundImages: "/public/ГоловнаСторінка/23.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Саджанці декоративних чагарників",
     backgroundImages: "/public/ГоловнаСторінка/24.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Цибулини та бульби квітів",
     backgroundImages: "/public/ГоловнаСторінка/25.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Насіння",
     backgroundImages: "/public/ГоловнаСторінка/26.png",
+    routeCatalog: "#",
   },
   {
     titleOfCatalog: "Все для саду та городу",
     backgroundImages: "/public/ГоловнаСторінка/27.png",
+    routeCatalog: "#",
   },
 ];
 
