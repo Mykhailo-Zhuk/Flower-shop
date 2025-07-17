@@ -106,6 +106,7 @@
 .BuyButtonContainer {
   display: flex;
   justify-content: center;
+  margin: 10px 0px;
 }
 
 h2 {
@@ -128,8 +129,7 @@ h2 {
 .SlideContainer {
   display: flex;
   flex-direction: column;
-  columns: 1;
-  column-gap: 20px;
+  gap: 0px; /* це працює для flex-контейнера */
   /* background-color: #569464; */
 }
 
@@ -367,6 +367,13 @@ h1.nameOfUserH1 {
     height: fit-content;
   }
 
+  /* .SlideContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #569464;
+  } */
+
   .reviewCard {
     background-color: #f5f5f5;
     /* padding: 20px; */
@@ -445,7 +452,7 @@ h1.nameOfUserH1 {
     font-size: 17px;
     margin: 0 auto;
     color: #569464;
-    width: 180px;
+    width: 240px;
   }
 
   .TitleOfCaruselGreenRosesEnglandViewed {
