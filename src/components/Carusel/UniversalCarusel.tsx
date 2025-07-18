@@ -318,14 +318,17 @@ const UniversalCarusel: React.FC<UniversalCarouselProps> = ({
                   overflow: "hidden",
                 }}
               >
-                <p className="IsAvailable " style={{ color: "black" }}>
+                <p
+                  className="IsAvailable IsAvailableTeaSunnyRoses"
+                  style={{ color: "black" }}
+                >
                   {item.IsAvailable}
                 </p>
                 <div className="ratingBottom">
                   <Rating value={Number(item.rating) || 0} readOnly />
                 </div>
               </div>
-              <h1 className="TitleOfCaruselGreenRosesEngland">
+              <h1 className="TitleOfCaruselGreenRosesEngland TitleOfCaruselGreenSunnyRosesTea">
                 {item.titleOfTeaHybrideRose}
               </h1>
 
