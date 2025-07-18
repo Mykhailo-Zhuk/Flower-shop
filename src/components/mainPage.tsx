@@ -132,7 +132,7 @@ const MainPage: React.FC = () => {
         <div className="">
           <h2 className="headerOfTitlePerevagy">Відгуки про нас</h2>
         </div>
-        <div className="MarginSectionOfCarusel">
+        <div className="MarginSectionOfCarusel reviews-carousel">
           <UniversalCarusel
             slidesToShow={1}
             items={ReviewsDataMainPage}

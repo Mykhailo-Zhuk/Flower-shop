@@ -270,6 +270,15 @@ ul {
   margin-block-start: 0;
 }
 
+.reviews-carousel .ContainerCaruselWidth .slick-slide {
+  padding: 0 24px; /* або бажаний розмір відступу */
+  box-sizing: border-box;
+}
+
+.reviews-carousel .ContainerCaruselWidth .slick-list {
+  margin: 0 -24px;
+}
+
 @media screen and (max-width: 1200px) and (min-width: 200px) {
   .advantages-item {
     display: flex;
@@ -384,6 +393,15 @@ ul {
     flex-direction: column;
     columns: 1; */
     gap: 35px;
+  }
+
+  .reviews-carousel .ContainerCaruselWidth .slick-slide {
+    padding: 0 42px; /* або бажаний розмір відступу */
+    box-sizing: border-box;
+  }
+
+  .reviews-carousel .ContainerCaruselWidth .slick-list {
+    margin: 0 -34px;
   }
 
   .MenuULSelect {
